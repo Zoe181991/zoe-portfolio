@@ -4,8 +4,13 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+  --color-border-base-color:0, 0, 0;
+  --color-text-base-color:0, 0, 0;
+  --color-base-1: 32,13,103;
+  --color-base-2: 255,211,180;
+  --color-base-3: 254,239,197;
+  --color-base-4: 110,122,212;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +22,14 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--color-base-1));
+  /*background-color: rgb(var(--color-base-1));*/
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--color-base-2))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--color-base-2));
 }
 
 @layer utilities {
@@ -31,3 +37,5 @@ body {
     text-wrap: balance;
   }
 }
+
+
