@@ -1,11 +1,17 @@
-import {Navbar} from "@/app/Components/Navbar";
-
+import {Navbar} from "@/app/lib/Layout/Navbar";
+import {Header} from "@/app/lib/Layout/Header";
+import {Footer} from "@/app/lib/Layout/Footer";
+import {Section} from "@/app/lib/Layout/Section";
 export default function Home() {
   return (
     <main className="flex flex-col ">
 
-<Navbar />
+        <Navbar />
+        <Header />
+        <Section id="about">about</Section>
+        <Section id="projects">projects</Section>
 
+        <Footer />
 
 
 {/*<>*/}

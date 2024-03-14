@@ -1,11 +1,11 @@
 'use client'
 import Image from "next/image";
 import { useState } from "react";
-import logo from "../../../public/faviconZoe.png";
-import linkedinIcon from "../../../public/svg/linkedinIcon.svg";
-import githubIcon from "../../../public/svg/githubIcon.svg";
-import mailIcon from "../../../public/svg/mailIcon.svg";
-import menuBarIcon from "../../../public/svg/menuBar.svg";
+import logo from "../../../../public/faviconZoe.png";
+import linkedinIcon from "../../../../public/svg/linkedinIcon.svg";
+import githubIcon from "../../../../public/svg/githubIcon.svg";
+import mailIcon from "../../../../public/svg/mailIcon.svg";
+import menuBarIcon from "../../../../public/svg/menuBar.svg";
 
 
 export function Navbar() {
