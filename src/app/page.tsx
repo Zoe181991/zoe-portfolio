@@ -1,7 +1,7 @@
-import {Navbar} from "@/app/lib/Layout/Navbar";
-import {Header} from "@/app/lib/Layout/Header";
-import {Footer} from "@/app/lib/Layout/Footer";
-import {Section} from "@/app/lib/Layout/Section";
+import {Navbar} from "@/app/lib/layout/Navbar";
+import {Header} from "@/app/lib/layout/Header";
+import {Footer} from "@/app/lib/layout/Footer";
+import {Section} from "@/app/lib/layout/Section";
 export default function Home() {
   return (
     <main className="flex flex-col ">
