@@ -8,7 +8,7 @@ export default function Home() {
       <Navbar />
 
       <main className="flex flex-col bg-body-bg-dots ">
-        <div className="bg-body-bg-shapes">
+        <div className="bg-body-bg-shapes scroll-smooth	">
           <Header />
 
           <Section id="aboutMe">about</Section>

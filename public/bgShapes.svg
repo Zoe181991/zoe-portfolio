@@ -2,7 +2,7 @@
      viewBox='0 0 1600 800' opacity="0.5"><rect fill="" opacity="0"  width='1600' height='800'/>
     <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%" >
-            <stop offset="0%" stop-color="#FA8E56" />
+            <stop offset="0%" stop-color="#FFF" />
             <stop offset="100%" stop-color="#9054F7" />
         </linearGradient>
     </defs>

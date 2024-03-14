@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fcdb195-9c83-4876-9f72-8bc0ff5c7839" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/bgShapes.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bgShapes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/bgShapes.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710406435974</updated>
       <workItem from="1710406437091" duration="200000" />
-      <workItem from="1710406648785" duration="20536000" />
+      <workItem from="1710406648785" duration="21382000" />
     </task>
     <servers />
   </component>
