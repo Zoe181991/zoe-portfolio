@@ -12,22 +12,21 @@ export function Header() {
   const imageHover = hover3d(headerRef, { x: 20, y: -5, z: 11 });
 
   return (
-    <div className="flex px-16 py-8 justify-between" ref={headerRef}>
-      <div className="flex">Hello</div>
+    <div className="flex px-16 py-8 justify-center" ref={headerRef}>
       <div
-        className="p-1 border border-base-4 border-4 rounded-md "
+        className="p-1 border border-base-4 border-4 rounded-md h-72 w-3/5 "
         style={{ transform: borderHover.transform }}
       >
-        <Image
-          style={{
-            transform: imageHover.transform,
-            transition: "all 0.5s ease-in-out",
-          }}
-          src={laptopImg}
-          alt={"laptop"}
-          width={350}
-          height={350}
-        />
+        {/*<Image*/}
+        {/*  style={{*/}
+        {/*    transform: imageHover.transform,*/}
+        {/*    transition: "all 0.5s ease-in-out",*/}
+        {/*  }}*/}
+        {/*  src={laptopImg}*/}
+        {/*  alt={"laptop"}*/}
+        {/*  width={350}*/}
+        {/*  height={350}*/}
+        {/*/>*/}
       </div>
     </div>
   );

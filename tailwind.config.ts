@@ -14,7 +14,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "about-bg-image": "url('/images/clouds.jpg')",
-        "body-bg-image": "url('/dot.svg')",
+        "body-bg-dots": "url('/dot.svg')",
+        "body-bg-shapes": "url('/bgShapes.svg')",
       },
       colors: {
         "text-base-color": "rgb(var(--color-text-base-color) / <alpha-value>)",
