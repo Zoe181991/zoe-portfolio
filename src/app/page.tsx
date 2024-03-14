@@ -1,53 +1,10 @@
-import Image from "next/image";
-import githubIcon from "./../../public/svg/githubIcon.svg";
-import linkedinIcon from "./../../public/svg/linkedinIcon.svg";
-import mailIcon from "./../../public/svg/mailIcon.svg";
-import logo from "./../../public/faviconZoe.png";
+import {Navbar} from "@/app/Components/Navbar";
 
 export default function Home() {
   return (
     <main className="flex flex-col">
 
-      <nav className="flex h-1/6 flex-row justify-between p-12">
-
-          <a href="/">
-              <div className="hidden flex items-center gap-1 cursor-pointer">
-                  <Image className="logoIcon" src={logo} alt={"Zoe"} width={36} />
-              </div>
-          </a>
-
-        <ul className="flex flex-row gap-4  ">
-          {/*<li className="hover:text-base-1 hover:opacity-15 hover:scale-125 transition-transform ease-in-out duration-100">about</li>*/}
-          {/*<li className="hover:text-base-2">linkedin</li>*/}
-          {/*<li className="text-base-2">github</li>*/}
-          {/*<li>email</li>*/}
-
-<li className="font-semibold hover:cursor-pointer hover:scale-125 transition ease-in-out duration-150">
-  <a href="/#aboutMe">about</a>
-          </li>
-          <li className="  hover:cursor-pointer hover:scale-125 transition ease-in-out duration-150">
-            <a
-                href="https://www.linkedin.com/in/zoe-barkan-a1aa17252/"
-                target="_blank"
-            >
-              <Image src={linkedinIcon} alt={""} width="24" />
-            </a>
-          </li>
-
-            <li className="hover:cursor-pointer hover:scale-125 transition ease-in-out duration-150">
-            <a href="https://github.com/Zoe181991" target="_blank">
-              <Image src={githubIcon} alt={""} width="24" />
-            </a>
-          </li>
-
-            <li className="hover:cursor-pointer hover:scale-125 transition ease-in-out duration-150">
-            <a href="mailto:zoebarkan@gmail.com" target="_blank">
-              <Image src={mailIcon} alt={""} width={"24"} />
-            </a>
-          </li>
-
-        </ul>
-      </nav>
+<Navbar />
 
 
 
