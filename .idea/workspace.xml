@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fcdb195-9c83-4876-9f72-8bc0ff5c7839" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/aboutBackground.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/clouds.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/flowersBackground.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/sea.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/dot.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
@@ -67,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710406435974</updated>
       <workItem from="1710406437091" duration="200000" />
-      <workItem from="1710406648785" duration="18032000" />
+      <workItem from="1710406648785" duration="18845000" />
     </task>
     <servers />
   </component>

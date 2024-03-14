@@ -4,7 +4,7 @@ import { Footer } from "@/app/lib/layout/Footer";
 import { Section } from "@/app/lib/layout/Section";
 export default function Home() {
   return (
-    <main className="flex flex-col ">
+    <main className="flex flex-col bg-body-bg-image ">
       <Navbar />
       <Header />
       <Section id="about">about</Section>
