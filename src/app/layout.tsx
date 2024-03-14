@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Abril_Fatface } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-const abril = Abril_Fatface({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["200", "300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -21,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <head>
-      <link rel="icon" href="/faviconZoe.png" sizes="any" />
-    </head>
-      <body className={abril.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/faviconZoe.png" sizes="any" />
+      </head>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
