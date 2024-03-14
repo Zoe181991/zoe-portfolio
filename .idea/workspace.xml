@@ -5,15 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fcdb195-9c83-4876-9f72-8bc0ff5c7839" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/lib/Components/MobileNav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lib/Components/Socialbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lib/utils/hover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/bootstrapIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/chakraIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/cssIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/firebaseIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/githubIcon2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/html5Icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/jsIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/mongoIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/nestJS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/nextJSIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/nodeIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/postgressIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/reactIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/sqlIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/tailwindIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/typeScriptIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/svg/skills/vercelIcon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/Layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/Layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/Layout/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/Layout/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/Components/Socialbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/Components/Socialbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Section.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710406435974</updated>
       <workItem from="1710406437091" duration="200000" />
-      <workItem from="1710406648785" duration="11865000" />
+      <workItem from="1710406648785" duration="15054000" />
     </task>
     <servers />
   </component>

@@ -8,18 +8,21 @@ import { useRef } from "react";
 export function Header() {
   const headerRef = useRef<HTMLDivElement>(null);
 
-  const hoverBorder = hover3d(headerRef, { x: 30, y: -40, z: 30 });
+  const borderHover = hover3d(headerRef, { x: 30, y: -40, z: 30 });
+  const imageHover = hover3d(headerRef, { x: 20, y: -5, z: 11 });
 
-  const hoverImage = hover3d(headerRef, { x: 20, y: -5, z: 11 });
   return (
     <div className="flex px-16 py-8 justify-between" ref={headerRef}>
       <div className="flex">Hello</div>
       <div
         className="p-1 border border-base-4 border-4 rounded-md "
-        style={{ transform: hoverBorder.transform }}
+        style={{ transform: borderHover.transform }}
       >
         <Image
-          style={{ transform: hoverImage.transform }}
+          style={{
+            transform: imageHover.transform,
+            transition: "all 0.5s ease-in-out",
+          }}
           src={laptopImg}
           alt={"laptop"}
           width={350}
