@@ -22,7 +22,7 @@ export function Navbar() {
             </div>
         </a>
 
-        <ul className="hidden md:flex md:flex-row md:gap-6  ">
+        <ul className="hidden md:flex md:flex-row md:gap-6">
             <li className="font-semibold hover:cursor-pointer hover:scale-125 transition ease-in-out duration-150">
                 <a href="/#aboutMe">about</a>
             </li>
