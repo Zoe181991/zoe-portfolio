@@ -2,6 +2,10 @@ import { Navbar } from "@/app/lib/layout/Navbar";
 import { Header } from "@/app/lib/layout/Header";
 import { Footer } from "@/app/lib/layout/Footer";
 import { Section } from "@/app/lib/layout/Section";
+import { Card } from "@/app/lib/Components/Card";
+import mukdam from "../../../public/demoMukdam15_02_24.gif";
+import { CardContent } from "@/app/lib/text/CardContent";
+
 export default function Home() {
   return (
     <>
@@ -12,7 +16,20 @@ export default function Home() {
           <Header />
 
           <Section id="aboutMe">about</Section>
-          <Section id="projects">projects</Section>
+          <Section id="projects">
+            projects
+            <div className="flex flex-row justify-between w-full gap-4">
+              {CardContent.map((card) => (
+                <Card
+                  key={card.id}
+                  title={card.title}
+                  description={card.description}
+                  image={card.image}
+                  link={card.link}
+                />
+              ))}
+            </div>
+          </Section>
           <div className=" bg-about-bg-image w-full h-screen bg-cover	"></div>
           <Footer />
         </div>

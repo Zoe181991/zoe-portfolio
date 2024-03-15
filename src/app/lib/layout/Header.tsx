@@ -1,7 +1,5 @@
 "use client";
-import laptopImg from "../../../../public/laptop.jpg";
-import Image from "next/image";
-import logo from "*.png";
+
 import hover3d from "@/app/lib/utils/hover";
 import { useRef } from "react";
 
