@@ -1,13 +1,10 @@
 import { Footer, Header, Navbar, Section, Card, AboutSection } from "ui";
 import { CardContent } from "ui";
-import cssIcon from "@/../public/svg/skills/cssIcon.svg";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-
       <main className="flex flex-col bg-body-bg-dots ">
         <div className="bg-body-bg-shapes scroll-smooth	">
           <Header />

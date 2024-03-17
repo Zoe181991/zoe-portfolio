@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fcdb195-9c83-4876-9f72-8bc0ff5c7839" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/DSC03907.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/Components/AboutSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/Components/HeadLine.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/svg/skills/chakraIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/chakraUIIcon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/svg/skills/vercelIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/vercelIcon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/mukdam-crm/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/mukdam-crm/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/Components/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/Components/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/text/CardContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/text/CardContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/text/skillsIcons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/text/skillsIcons.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +25,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/zoebarkan/Projects/zoe-portfolio/src/app/pet-app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/zoebarkan/.nvm/versions/node/v20.4.0/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/zoebarkan/Projects/zoe-portfolio/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zoebarkan/Projects/zoe-portfolio/src/app/pet-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/zoebarkan/.nvm/versions/node/v20.4.0/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/zoebarkan/Projects/zoe-portfolio/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/pet-app" />
