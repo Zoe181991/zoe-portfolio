@@ -14,7 +14,7 @@ export const CardContent: CardProps[] = [
     description: "Control system for pension reports for monthly inspection",
     image: "/demoMukdam15_02_24.gif",
     link: "/projects/mukdam-inspection",
-    skills: ["NextJS", "TypeScript", "TailwindCSS", "PostgressSQL"],
+    skills: ["PostgressSQL", "NextJS", "NestJS", "TypeScript", "TailwindCSS"],
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const CardContent: CardProps[] = [
       "CRM system to manage Accounts and Tokens with full CRUD options.",
     image: "/images/mukdamCRMCover.png",
     link: "/projects/mukdam-crm",
-    skills: ["NextJS", "TypeScript", "TailwindCSS"],
+    skills: ["NextJS", "TypeScript", "TailwindCSS", "PostgressSQL"],
   },
   {
     id: 3,
@@ -31,6 +31,6 @@ export const CardContent: CardProps[] = [
     description: "A smoke that is a byproduct of fire.",
     image: "/images/sea.jpg",
     link: "/projects/pet-app",
-    skills: ["React", "NodeJS", "MongoDB"],
+    skills: ["React", "NodeJS", "ChakraUI", "MongoDB", "Vercel"],
   },
 ];

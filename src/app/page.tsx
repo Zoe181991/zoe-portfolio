@@ -1,4 +1,4 @@
-import { Footer, Header, Navbar, Section, Card } from "ui";
+import { Footer, Header, Navbar, Section, Card, AboutSection } from "ui";
 import { CardContent } from "ui";
 import cssIcon from "@/../public/svg/skills/cssIcon.svg";
 import Image from "next/image";
@@ -26,8 +26,12 @@ export default function Home() {
               ))}
             </div>
           </Section>
-          <Section id="aboutMe">about</Section>
+          <Section id="aboutMe">
+            about
+            <AboutSection />
+          </Section>
           <div className=" bg-about-bg-image w-full h-screen bg-cover	"></div>
+
           <Footer />
         </div>
         {/*<>*/}
