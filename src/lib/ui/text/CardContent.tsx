@@ -3,7 +3,8 @@ interface CardProps {
   title: string;
   image: string;
   description?: string;
-  link?: string;
+  link: string;
+  skills?: string[];
 }
 
 export const CardContent: CardProps[] = [
@@ -12,7 +13,8 @@ export const CardContent: CardProps[] = [
     title: "Mukdam Control Panel",
     description: "Control system for pension reports for monthly inspection",
     image: "/demoMukdam15_02_24.gif",
-    link: "/mukdam-inspection",
+    link: "/projects/mukdam-inspection",
+    skills: ["NextJS", "TypeScript", "TailwindCSS", "PostgressSQL"],
   },
   {
     id: 2,
@@ -20,13 +22,15 @@ export const CardContent: CardProps[] = [
     description:
       "CRM system to manage Accounts and Tokens with full CRUD options.",
     image: "/images/mukdamCRMCover.png",
-    link: "/mukdam-crm",
+    link: "/projects/mukdam-crm",
+    skills: ["NextJS", "TypeScript", "TailwindCSS"],
   },
   {
     id: 3,
     title: "Pet App",
     description: "A smoke that is a byproduct of fire.",
     image: "/images/sea.jpg",
-    link: "/pet-app",
+    link: "/projects/pet-app",
+    skills: ["React", "NodeJS", "MongoDB"],
   },
 ];

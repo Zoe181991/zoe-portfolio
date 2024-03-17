@@ -1,0 +1,1 @@
+export { MultiLayerParallax } from "./MultiLayerParallax";

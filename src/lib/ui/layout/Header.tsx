@@ -1,6 +1,6 @@
 "use client";
 
-import hover3d from "@/app/lib/utils/hover";
+import hover3d from "../../utils/hover";
 import { useRef } from "react";
 
 export function Header() {

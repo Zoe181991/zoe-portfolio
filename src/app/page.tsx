@@ -1,10 +1,7 @@
-import { Navbar } from "@/app/lib/layout/Navbar";
-import { Header } from "@/app/lib/layout/Header";
-import { Footer } from "@/app/lib/layout/Footer";
-import { Section } from "@/app/lib/layout/Section";
-import { Card } from "@/app/lib/Components/Card";
-import mukdam from "../../../public/demoMukdam15_02_24.gif";
-import { CardContent } from "@/app/lib/text/CardContent";
+import { Footer, Header, Navbar, Section, Card } from "ui";
+import { CardContent } from "ui";
+import cssIcon from "@/../public/svg/skills/cssIcon.svg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,11 +11,9 @@ export default function Home() {
       <main className="flex flex-col bg-body-bg-dots ">
         <div className="bg-body-bg-shapes scroll-smooth	">
           <Header />
-
-          <Section id="aboutMe">about</Section>
           <Section id="projects">
-            projects
-            <div className="flex flex-row justify-between w-full gap-4">
+            <div className="m-4 font-semibold"> Projects</div>
+            <div className="flex-col flex md:flex-row justify-between w-full gap-8">
               {CardContent.map((card) => (
                 <Card
                   key={card.id}
@@ -26,10 +21,12 @@ export default function Home() {
                   description={card.description}
                   image={card.image}
                   link={card.link}
+                  skills={card.skills}
                 />
               ))}
             </div>
           </Section>
+          <Section id="aboutMe">about</Section>
           <div className=" bg-about-bg-image w-full h-screen bg-cover	"></div>
           <Footer />
         </div>

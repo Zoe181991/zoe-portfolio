@@ -5,14 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fcdb195-9c83-4876-9f72-8bc0ff5c7839" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/demoMukdam15_02_24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/mukdamCRMCover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lib/Components/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/lib/text/CardContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/projects/mukdam-crm/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/projects/mukdam-inspection/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/projects/pet-app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/Components/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/text/skillsIcons.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/MultiLayerParallax.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/lib/layout/Section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/svg/skills/mongoIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/mongoDBIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/svg/skills/nestJS.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/nestJSIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/svg/skills/nextJSIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/nextJSIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/svg/skills/nodeIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/nodeJSIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/svg/skills/postgressIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/postgressSQLIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/svg/skills/tailwindIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/tailwindCSSIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/Components/Card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/Components/MobileNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/Components/MobileNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/Components/Socialbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/Components/Socialbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/layout/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/layout/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/layout/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/layout/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/layout/Section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/text/CardContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/text/CardContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/lib/utils/hover.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/utils/hover.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +53,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/zoebarkan/Projects/zoe-portfolio",
+    "last_opened_file_path": "/Users/zoebarkan/Projects/zoe-portfolio/src/app/pet-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,12 +66,17 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/pet-app" />
+      <recent name="$PROJECT_DIR$/src/app/mukdam-inspection" />
+      <recent name="$PROJECT_DIR$/src/app/mukdam-crm" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/ui/text" />
+      <recent name="$PROJECT_DIR$/src/lib/ui" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/app/projects" />
       <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/svg/images" />
-      <recent name="$PROJECT_DIR$/src/app/lib/Layout" />
-      <recent name="$PROJECT_DIR$/src/app/lib" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710406435974</updated>
       <workItem from="1710406437091" duration="200000" />
-      <workItem from="1710406648785" duration="26525000" />
+      <workItem from="1710406648785" duration="35894000" />
     </task>
     <servers />
   </component>
@@ -76,7 +99,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/lib/layout/Header.tsx</url>
+          <url>file://$PROJECT_DIR$/src/lib/ui/layout/Header.tsx</url>
           <line>17</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
