@@ -8,6 +8,7 @@ export default function Home() {
       <main className="flex flex-col bg-body-bg-dots ">
         <div className="bg-body-bg-shapes scroll-smooth	">
           <Header />
+          
           <Section id="projects">
             <div className="m-4 font-semibold"> Projects</div>
             <div className="flex-col flex md:flex-row justify-between w-full gap-8">
