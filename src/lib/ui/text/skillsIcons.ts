@@ -4,7 +4,7 @@ export enum SkillsIcons {
   NextJS = "nextJSIcon",
   TypeScript = "typeScriptIcon",
   TailwindCSS = "tailwindCSSIcon",
-  PostgressSQL = "postgressSQLIcon",
+  PostgreSQL = "postgreSQLIcon",
   NodeJS = "nodeJSIcon",
   MongoDB = "mongoDBIcon",
   Bootstrap = "bootstrapIcon",
