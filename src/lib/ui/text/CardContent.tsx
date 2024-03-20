@@ -10,7 +10,7 @@ interface CardProps {
 export const CardContent: CardProps[] = [
   {
     id: 1,
-    title: "Mukdam inspection control system",
+    title: "Mukdam inspection system",
     description: "Control system for pension reports for monthly inspection",
     image: "/images/projects/mukdam-inspection/demoMukdamInspection.gif",
     link: "/projects/mukdam-inspection",
