@@ -5,9 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7385d6b6-c456-4ea5-8cf0-39a92a0b3647" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-crm/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-crm/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-crm/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-crm/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-crm/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-crm/demoMukdamCRM.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-inspection/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-inspection/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-inspection/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-inspection/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-inspection/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-inspection/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/mukdam-inspection/demoMukdamInspection.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/mukdam-crm/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/mukdam-crm/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/demoMukdam15_02_24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/mukdamCRMCover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/svg/skills/postgressSQLIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/svg/skills/postgreSQLIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/Components/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/Components/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/layout/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/text/CardContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/text/CardContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/text/skillsIcons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/text/skillsIcons.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,22 +44,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/zoebarkan/.nvm/versions/node/v20.4.0/lib/node_modules/prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/zoebarkan/Projects/zoe-portfolio/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/zoebarkan/Projects/zoe-portfolio/public/svg/projects/mukdam-inspection",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/zoebarkan/.nvm/versions/node/v20.4.0/lib/node_modules/prettier",
+    "ts.external.directory.path": "/Users/zoebarkan/Projects/zoe-portfolio/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/svg/projects/mukdam-inspection" />
+      <recent name="$PROJECT_DIR$/public/svg/projects/mukdam-crm" />
+      <recent name="$PROJECT_DIR$/src/app/projects/mukdam-crm" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/svg/projects/mukdam-crm" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -54,7 +80,8 @@
       <option name="presentableId" value="Default" />
       <updated>1710744892066</updated>
       <workItem from="1710744893702" duration="3162000" />
-      <workItem from="1710778638789" duration="1745000" />
+      <workItem from="1710778638789" duration="4521000" />
+      <workItem from="1710934930395" duration="2428000" />
     </task>
     <servers />
   </component>

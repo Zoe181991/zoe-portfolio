@@ -10,20 +10,20 @@ interface CardProps {
 export const CardContent: CardProps[] = [
   {
     id: 1,
-    title: "Mukdam Control Panel",
+    title: "Mukdam inspection control system",
     description: "Control system for pension reports for monthly inspection",
-    image: "/demoMukdam15_02_24.gif",
+    image: "/images/projects/mukdam-inspection/demoMukdamInspection.gif",
     link: "/projects/mukdam-inspection",
-    skills: ["PostgressSQL", "NextJS", "NestJS", "TypeScript", "TailwindCSS"],
+    skills: ["PostgreSQL", "NextJS", "NestJS", "TypeScript", "TailwindCSS"],
   },
   {
     id: 2,
-    title: "Mukdam CRM",
+    title: "Mukdam CRM system",
     description:
       "CRM system to manage Accounts and Tokens with full CRUD options.",
-    image: "/images/mukdamCRMCover.png",
+    image: "/images/projects/mukdam-crm/demoMukdamCRM.gif",
     link: "/projects/mukdam-crm",
-    skills: ["NextJS", "TypeScript", "TailwindCSS", "PostgressSQL"],
+    skills: ["NextJS", "TypeScript", "TailwindCSS", "PostgreSQL"],
   },
   {
     id: 3,
