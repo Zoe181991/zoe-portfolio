@@ -22,7 +22,7 @@ export default function Home() {
                     Search for your pet and save it to your wishlist. You can register and adopt or foster it for a short period of time.                   </p>
                   <p>
                     I had a great time putting this app together, I learned a lot about the meaning of being a full-stack developer and crafting the entire app end-to-end.                  </p>
-            
+
                   <p>This was the final project of my studies at the ITC full-stack development bootcamp. The project had three main parts:
                     Building the front-end using ChakraUI and additional code - guest preview, user preview, and manager preview.
                     Building the backend database using MongoDB.
