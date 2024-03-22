@@ -9,3 +9,4 @@ export { CardContent } from "./text/CardContent";
 export { SkillsIcons } from "./text/skillsIcons";
 export { HeadLine } from "./Components/HeadLine";
 export { AboutSection } from "./Components/AboutSection";
+export {ImageGallery} from "./Components/ImageGallery";
