@@ -39,7 +39,7 @@ export function ImageGallery({imagesURLS}: ImageGalleryProps) {
 
                                 <div className="absolute">
                                 <Image  src={image.src} alt={image.text} width={680} height={480} sizes={"(max-width: 200px) 100vw, (max-width: 1200px) 50vw, 33vw"}/>
-                                <div className="relative  z-10 bg-white bg-opacity-30 h-24 w-full text-base-2 text-xl">{image.text}</div>
+                                <div className="relative px-2 py-4  z-10 bg-white bg-opacity-30 h-16 w-full text-base-2 text-lg md:text-xl">{image.text}</div>
                                 </div>
                             </div>
                         )

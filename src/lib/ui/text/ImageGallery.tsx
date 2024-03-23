@@ -6,23 +6,23 @@ interface ImageGalleryProps {
 
 export const ImageGalleryMukdamCrmContent: ImageGalleryProps[] = [
   {
-    text: "1",
+    text: "Accounts table",
     src: "/images/projects/mukdam-crm/1.png",
   },
   {
-    text: "2",
+    text: "Account card view with edit options",
     src: "/images/projects/mukdam-crm/2.png",
   },
   {
-    text: "3",
+    text: "Shortcuts for account management",
     src: "/images/projects/mukdam-crm/3.png",
   },
   {
-    text: "4",
+    text: "Related tokens for the specific account",
     src: "/images/projects/mukdam-crm/4.png",
   },
   {
-    text: "5",
+    text: "Token card view with edit options",
     src: "/images/projects/mukdam-crm/5.png",
   },
 ];
