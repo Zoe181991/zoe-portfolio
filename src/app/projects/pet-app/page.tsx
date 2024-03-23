@@ -1,11 +1,11 @@
 import {Section, Footer, Navbar, HeadLine, ImageGallery} from "ui";
+import {ImageGalleryPetAppContent} from "ui";
 
 export default function Home() {
 
   return (
     <>
       <Navbar />
-
       <main className="flex flex-col bg-body-bg-dots ">
         <div className="bg-body-bg-shapes scroll-smooth	">
           <div className="w-full flex flex-row justify-center p-24  max-h-fit min-h-10 ">
@@ -30,7 +30,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="basis-1/2 flex flex-col gap-4 mt-8 justify-items-start">
-                <ImageGallery imagesURLS={imagesURLS}/>
+                <ImageGallery imagesURLS={ImageGalleryPetAppContent}/>
 
               </div>
             </div>
