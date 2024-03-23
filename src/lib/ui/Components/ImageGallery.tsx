@@ -1,15 +1,16 @@
 'use client'
 import React from 'react';
 import Image from "next/image";
+
+
 interface ImageGalleryProps {
-    imagesURLS: { text: string, url: string }[];
+    imagesURLS:{text: string, src: string } [];
 }
-export function ImageGallery({imagesURLS}:ImageGalleryProps) {
+export function ImageGallery({imagesURLS}: ImageGalleryProps) {
 
     const [activeIndex, setActiveIndex] = React.useState(0);
 // const [url, setUrl] = React.useState(imagesURLS[activeIndex].url)
     const nextPhoto = () => {
-        console.log('next', activeIndex)
         if(activeIndex === imagesURLS.length-1) {
             setActiveIndex(0)
 
@@ -19,7 +20,6 @@ export function ImageGallery({imagesURLS}:ImageGalleryProps) {
         }
     }
     const previousPhoto = () => {
-        console.log('pre', activeIndex)
         if(activeIndex === 0) {
             setActiveIndex(imagesURLS.length-1)
 
@@ -31,27 +31,23 @@ export function ImageGallery({imagesURLS}:ImageGalleryProps) {
 
     return (
         <div>
-
-
-            <div id="gallery" className="relative w-full" data-carousel="slide">
-                <div className=" h-56 overflow-hidden rounded-lg md:h-96">
-
+            <div id="gallery" className="relative w-full h-full " >
+                <div className="overflow-hidden rounded-lg w-full h-56  md:h-96 ">
                     { imagesURLS.map((image, index) => {
                         return (
                             <div key={index} className={(index===activeIndex)? "absolute top-0 left-0 w-full h-full opacity-100 duration-700 ease-in-out" : "hidden"}>
-                                <div className="flex flex-col grow  w-full">
-                                    <div className="flex basis-1/2">
-                                    <Image width={400} height={300} src={image.url} alt={image.text} className="object-cover w-full h-full"/>
-                                    </div>
-                                    <div className="flex basis-1/2">
-                                <div className=" bg-white bg-opacity-30 h-full w-full text-base-2 text-xl">{image.text}</div>
+
+                                <div className="absolute">
+                                <Image  src={image.src} alt={image.text} width={680} height={480} sizes={"(max-width: 200px) 100vw, (max-width: 1200px) 50vw, 33vw"}/>
+                                <div className="relative  z-10 bg-white bg-opacity-30 h-24 w-full text-base-2 text-xl">{image.text}</div>
                                 </div>
-                            </div>
                             </div>
                         )
                     })}
 
                 </div>
+
+
                 <button onClick={previousPhoto} type="button"
                         className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                         >

@@ -9,7 +9,7 @@ export default function Home() {
         <Navbar />
 
         <main className="flex flex-col bg-body-bg-dots ">
-            <div className="bg-body-bg-shapes scroll-smooth h-screen flex	">
+            <div className="bg-body-bg-shapes scroll-smooth	">
                 <div className="w-full flex flex-row justify-center p-24  max-h-fit min-h-10 ">
                     <div className="w-full max-w-desktop flex grow gap-4">
                         <div className="flex  flex-col basis-1/2">

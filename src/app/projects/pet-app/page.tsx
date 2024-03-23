@@ -1,14 +1,13 @@
 import {Section, Footer, Navbar, HeadLine, ImageGallery} from "ui";
 
 export default function Home() {
-  const imagesURLS = [{text:"1", url:"../../../../public/svg/mailIcon.svg"}, {text:"2", url:"../../../../public/svg/githubIcon.svg"}, {text:"3", url:"../../../../public/svg/likedinIcon.svg"}]
 
   return (
     <>
       <Navbar />
 
       <main className="flex flex-col bg-body-bg-dots ">
-        <div className="bg-body-bg-shapes scroll-smooth h-screen flex	">
+        <div className="bg-body-bg-shapes scroll-smooth	">
           <div className="w-full flex flex-row justify-center p-24  max-h-fit min-h-10 ">
             <div className="w-full max-w-desktop flex grow gap-4">
               <div className="flex  flex-col basis-1/2">

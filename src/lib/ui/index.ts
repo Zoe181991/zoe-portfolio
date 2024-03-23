@@ -6,6 +6,8 @@ export { Card } from "./Components/Card";
 export { MobileNav } from "./Components/MobileNav";
 export { Socialbar } from "./Components/Socialbar";
 export { CardContent } from "./text/CardContent";
+export {ImageGalleryMukdamCrmContent} from "./text/ImageGallery";
+
 export { SkillsIcons } from "./text/skillsIcons";
 export { HeadLine } from "./Components/HeadLine";
 export { AboutSection } from "./Components/AboutSection";
