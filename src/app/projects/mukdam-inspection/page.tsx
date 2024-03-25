@@ -13,21 +13,19 @@ export default function Home() {
 
         <main className="flex flex-col bg-body-bg-dots ">
             <div className="bg-body-bg-shapes scroll-smooth	">
-                <div className="w-full flex flex-col justify-center pt-8 pb-24 px-24  max-h-fit min-h-10 ">
-                    <HeadLine text={"Mukdam CRM system"} />
-                    <div className="text-md mt-4">
+                <div className="w-full flex flex-col justify-center pt-8 pb-24 px-12 md:px-24  max-h-fit min-h-10 ">
+                    <HeadLine text={"Mukdam Inspection System"} />
+                    <div className="text-sm lg:text-md mt-4">
                         NextJS | TypeScript | Drizzle ORM | TailwindCSS{" "}
                     </div>
-                    <div className="w-full max-w-desktop flex flex-col mt-8 lg:flex-row grow gap-16 lg:gap-12">
-                        <div className="basis-1/2 flex flex-col ml-0  justify-items-center">
+                    <div className="w-full flex flex-col mt-8 lg:flex-row grow shrink gap-8  sm:gap-16 md:gap-12 grow shrink  lg:gap-8">
+                        <div className=" lg:w-1/2 w-full h-full">
                             <ImageGallery imagesURLS={ImageGalleryMukdamInspectionContent}/>
                         </div>
-                        <div className="flex flex-col basis-1/2 text-white gap-6 ">
+                        <div className="h-4"></div>
+                        <div className="flex flex-col h-full lg:w-1/2 text-white gap-6 lg:mt-0 ">
                                 <p>
                                     Mukdam is a service that enables you to monitor and manage your pension information. The user registers the service via WhatsApp chat and subsequently receives a monthly report.</p>
-
-
-
                                 <div className="flex flex-col relative ">
                                     <div className=" bg-base-2 rounded-md  z-0 p-4 flex flex-col">
                                     <p className="mb-2">The project had 4 parts:</p>

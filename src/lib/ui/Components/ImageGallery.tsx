@@ -30,23 +30,19 @@ export function ImageGallery({imagesURLS}: ImageGalleryProps) {
     }
 
     return (
-        <div>
-            <div id="gallery" className="relative w-full h-full " >
-                <div className="overflow-hidden rounded-lg w-full h-56  md:h-96 ">
-                    { imagesURLS.map((image, index) => {
+            <div id="gallery" className="relative  " >
+                <div className="overflow-hidden rounded-lg w-screen h-72  md:h-96 justify-center ">
+                { imagesURLS.map((image, index) => {
                         return (
-                            <div key={index} className={(index===activeIndex)? "absolute top-0 left-0 w-full h-full opacity-100 duration-700 ease-in-out" : "hidden"}>
+                            <div key={index} className={(index===activeIndex)? "absolute top-0 left-0 w-full h-full opacity-100 duration-700 ease-in-out " : "hidden"}>
 
-                                <div className="absolute">
-                                <Image  src={image.src} alt={image.text} width={680} height={480} sizes={"(max-width: 200px) 100vw, (max-width: 1200px) 50vw, 33vw"}/>
+                                <Image  src={image.src} alt={image.text} layout="responsive" width={680} height={480} />
                                 <div className="relative px-2 py-4  z-10 bg-white bg-opacity-30 h-16 w-full max-w-screen-xl text-base-2 text-lg md:text-xl">{image.text}</div>
-                                </div>
                             </div>
                         )
                     })}
 
                 </div>
-
 
                 <button onClick={previousPhoto} type="button"
                         className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
@@ -76,8 +72,6 @@ export function ImageGallery({imagesURLS}: ImageGalleryProps) {
                 </button>
             </div>
 
-
-        </div>
     );
 }
 

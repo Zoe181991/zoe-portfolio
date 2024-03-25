@@ -9,7 +9,7 @@ export function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
 
   return (
-    <nav className="flex h-20 flex-row justify-between py-6 px-16  items-center">
+    <nav className="flex h-20 flex-row justify-between py-6 px-12 md:px-16  items-center">
       <a href="/">
         <div className=" flex items-center gap-1 cursor-pointer ">
           <Image className="logoIcon" src={logo} alt={"Zoe"} width={36} />
