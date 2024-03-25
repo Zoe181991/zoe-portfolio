@@ -1,5 +1,8 @@
 import {Section, Footer, Navbar, HeadLine, ImageGallery, ImageGalleryMukdamCrmContent} from "ui";
 import {ImageGalleryMukdamInspectionContent} from "ui";
+import arrowRight from "../../../../public/svg/arrowRight.svg";
+import Image from "next/image";
+import menuBarIcon from "../../../../public/svg/menuBar.svg";
 export default function Home() {
 
     const imagesURLS = [{text:"1", url:"../../../../public/svg/mailIcon.svg"}, {text:"2", url:"../../../../public/svg/githubIcon.svg"}, {text:"3", url:"../../../../public/svg/likedinIcon.svg"}]
@@ -15,22 +18,33 @@ export default function Home() {
                     <div className="text-md mt-4">
                         NextJS | TypeScript | Drizzle ORM | TailwindCSS{" "}
                     </div>
-                    <div className="w-full max-w-desktop flex flex-col lg:flex-row grow  gap-48 lg:gap-8">
-                        <div className="basis-1/2 flex flex-col  mr-8 ml-0 mt-8 justify-items-start">
+                    <div className="w-full max-w-desktop flex flex-col mt-8 lg:flex-row grow gap-16 lg:gap-12">
+                        <div className="basis-1/2 flex flex-col ml-0  justify-items-center">
                             <ImageGallery imagesURLS={ImageGalleryMukdamInspectionContent}/>
                         </div>
-                        <div className="flex flex-col basis-1/2 text-white mt-4 sm:mt-16 md:mt-8    flex flex-col gap-6">
-
+                        <div className="flex flex-col basis-1/2 text-white gap-6 ">
                                 <p>
                                     Mukdam is a service that enables you to monitor and manage your pension information. The user registers the service via WhatsApp chat and subsequently receives a monthly report.</p>
-                                <p>
-                                    The project had 4 parts:
-                                    Writing complex queries in PostgreSQL using JSON/JSONB
-                                    Writing the algorithm that performs the checks
-                                    Building a front-end dashboard for managing the inspections (used by the account manager)
-                                    Assimilating the results from the inspection system in the front-end monthly report
-                                </p>
-                                <p>
+
+
+
+                                <div className="flex flex-col relative ">
+                                    <div className=" bg-base-2 rounded-md  z-0 p-4 flex flex-col">
+                                    <p className="mb-2">The project had 4 parts:</p>
+                                        <ul className="space-y-3.5">
+                                    <li>
+                                        <Image src={arrowRight} alt={"menu"} width={24} height={24} style={{display:"inline", marginRight:10}} />Writing complex queries in PostgreSQL using JSON/JSONB</li>
+                                     <li><Image src={arrowRight} alt={"menu"} width={24} height={24} style={{display:"inline", marginRight:10}} /> Writing the algorithm that performs the checks</li>
+                                    <li><Image src={arrowRight} alt={"menu"} width={24} height={24} style={{display:"inline", marginRight:10}} /> Building a front-end dashboard for managing the inspections (used by the account manager)
+                                    </li>
+                                    <li><Image src={arrowRight} alt={"menu"} width={24} height={24} style={{display:"inline", marginRight:10}} /> Assimilating the results from the inspection system in the front-end monthly report</li>
+                                        </ul>
+                                    </div>
+                                    {/*<div className="bg-base-2 w-[calc(100%+1rem)] h-full absolute  rounded-md bottom-0 left-0" ></div>*/}
+                                        <div className="w-[calc(100%+1rem)]  opacity-60 rounded-md h-full -z-50  bg-gradient-to-r from-base-2 to-base-4 absolute  -bottom-3 -left-3  border-b-base-2 border-b-2"></div>
+                                </div>
+
+                        <p>
                                     The data received from the insurance companies arrives in XML files with a certain structure and is translated into long, complex JSON fields. The first step in this project was to extract the correct data from the correct fields in order to build the monthly report. The queries were written in PostgreSQL using JSON/JSONB. Later on, I re-wrote parts of the code using Drizzle ORM.                                </p>
 
                                 <p>The next step of this project was to perform checks for the information received from the insurance companies. Each policy’s current data is compared to the data from the last month, or to the initial data from the insurance company. The inspection system checks for deviations in the management fees, changes in the investment strategies, deviations in the expected balance, missing policies, or new policies. </p>

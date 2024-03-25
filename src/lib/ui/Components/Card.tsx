@@ -14,8 +14,9 @@ export function Card({ title, description, image, link, skills }: CardProps) {
   return (
     <Link href={link}>
       <div className=" w-80 h-96 relative flex flex-col justify-between bg-base-1 hover:cursor-pointer mt-10   p-2 border-2 border-base-2 rounded-md transition transition-all ease-in-out duration-300 ">
-        <Image unoptimized src={image} alt={title} width={300} height={300} />
-
+        <div style={{borderRadius:"4px"}}>
+        <Image layout="responsive" unoptimized src={image} alt={title} width={300} height={300}/>
+        </div>
           <h3 className="hover:transition hover:translate-x-2 mt-0 px-2 text-white text-xl font-bold inline-block ">
             {title}
           </h3>
