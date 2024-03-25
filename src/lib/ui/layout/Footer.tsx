@@ -3,7 +3,7 @@ import "../../../app/globals.css";
 
 export function Footer() {
   return (
-    <div className="mt-8 bottom-0 flex flex-col w-full px-16 bg-base-1 h-48 justify-center items-center">
+    <div className="mt-6 bottom-0 flex flex-col w-full px-16 bg-base-1 h-32 justify-center items-center">
       <ul className="flex flex-row gap-8">
         <li className="hover:transition hover:transition-all hover:ease-in-out hover:duration-150 hover:scale-125 flex-row flex text-lg font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-base-2 to-base-4">
           <a

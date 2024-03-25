@@ -11,7 +11,7 @@ export function Section({ id, children, ref }: SectionProps) {
   return (
     <section
       id={id}
-      className="my-8 flex flex-row justify-center items-center px-12 py-16  lg:p-24  max-h-fit min-h-10"
+      className="mb-8 mt-0 flex flex-row justify-center items-center px-12 py-16  lg:px-24 lg:py-12  max-h-fit min-h-10"
     >
       <div className="w-full max-w-desktop">
         <div className="flex grow flex-col justify-center items-center">
