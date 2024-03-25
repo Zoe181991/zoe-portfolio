@@ -45,8 +45,14 @@ export const ImageGalleryMukdamInspectionContent: ImageGalleryProps[] = [  {
   },
   {
     text: "Token card view with edit options",
-    src: "/images/projects/mukdam-inspection/5.png",
-  },]
+    src: "/images/projects/mukdam-inspection/6.png",
+  },{
+    text: "Token card view with edit options",
+    src: "/images/projects/mukdam-inspection/7.png",
+  },{
+    text: "Token card view with edit options",
+    src: "/images/projects/mukdam-inspection/8.png",
+  }]
 
 
 

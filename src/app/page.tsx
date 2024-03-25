@@ -11,7 +11,7 @@ export default function Home() {
 
           <Section id="projects">
             <div className="m-4 font-semibold"> Projects</div>
-            <div className="flex-col flex md:flex-row justify-between w-full gap-8">
+            <div className="flex-col flex grow lg:flex-row justify-between items-center w-full gap-4">
               {CardContent.map((card) => (
                 <Card
                   key={card.id}
