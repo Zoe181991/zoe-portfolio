@@ -66,7 +66,7 @@ export const ImageGalleryPetAppContent: ImageGalleryProps[] = [  {
   },
   {
     text: "Shortcuts for account management",
-    src: "/images/projects/mukdam-crm/3.png",
+    src: "/images/projects/pet-app/3.png",
   },
   {
     text: "Related tokens for the specific account",

@@ -1,6 +1,5 @@
 import { Footer, Header, Navbar, Section, Card, AboutSection } from "ui";
 import { CardContent } from "ui";
-
 export default function Home() {
   return (
     <>
@@ -10,8 +9,8 @@ export default function Home() {
           <Header />
 
           <Section id="projects">
-            <div className="m-4 font-semibold"> Projects</div>
-            <div className="flex-col flex grow lg:flex-row justify-between items-center w-full gap-4">
+            <div className="flex mb-4 text-2xl font-semibold"> Projects</div>
+            <div className="flex-col flex  lg:flex-row justify-between items-center gap-2 w-full ">
               {CardContent.map((card) => (
                 <Card
                   key={card.id}
@@ -24,15 +23,20 @@ export default function Home() {
               ))}
             </div>
           </Section>
-          <Section id="aboutMe">
-            about
-            <AboutSection />
-          </Section>
-          <div className=" bg-about-bg-image w-full h-screen bg-cover	"></div>
 
-          <Footer />
+          <div className=" bg-about-bg-image w-full  bg-cover p-8	">
+            <Section id="aboutMe">
+              <div className="mb-6 text-2xl font-semibold"> About me</div>
+              <AboutSection  />
+            </Section>
+
+          </div>
+
         </div>
+
       </main>
+      <Footer />
+
     </>
   );
 }

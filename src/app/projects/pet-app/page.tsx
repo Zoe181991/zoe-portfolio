@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex flex-col bg-body-bg-dots ">
         <div className="bg-body-bg-shapes scroll-smooth	">
           <div className="w-full flex flex-col justify-center pt-8 pb-24 px-12 md:px-24  max-h-fit min-h-10 ">
-            <HeadLine text={"Mukdam Inspection System"} />
+            <HeadLine text={"Pet App"} />
             <div className="text-sm lg:text-md mt-4">
               React | MongoDB | Vercel | ChakraUI | Node.js
             </div>

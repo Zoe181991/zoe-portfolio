@@ -10,7 +10,7 @@ export function Header() {
   const imageHover = hover3d(headerRef, { x: 20, y: -5, z: 11 });
 
   return (
-    <div className="flex px-16 py-8 justify-center" ref={headerRef}>
+    <div className="flex w-full justify-center py-8" ref={headerRef}>
       <div
         className="p-1 border border-base-4 border-4 rounded-md h-72 w-3/5 flex flex-col gap-4 justify-center items-center "
         style={{ transform: borderHover.transform }}
