@@ -24,9 +24,8 @@ export default function Home() {
             </div>
           </Section>
 
-          <div className=" bg-about-bg-image w-full  bg-cover p-8	">
+          <div className="bg-about-bg-image w-full  bg-cover px-8">
             <Section id="aboutMe">
-              <div className="mb-6 text-2xl font-semibold"> About me</div>
               <AboutSection  />
             </Section>
 
