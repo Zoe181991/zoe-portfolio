@@ -1,10 +1,10 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-import {Indie_Flower} from "next/font/google";
+import { Rubik_Scribble} from "next/font/google";
 
 
-const indie_flower = Indie_Flower({ subsets: ["latin"]  , weight: ["400"],});
+const rubikScribble = Rubik_Scribble({ subsets: ["latin"]  , weight: ["400"],});
 
 interface props {
   props?:any;
@@ -13,12 +13,8 @@ export function AboutSection({props}:props) {
   return (
 
       <div className=" flex flex-col items-center lg:items-start md:flex-row h-full gap-4 lg:gap-12 " >
-          <div className="flex flex-col gap-12 w-full h-full">
-              <div className="relative">
-              <div className="absolute top-0 left-0 text-6xl font-bold text-white -rotate-12">
-                <div className={indie_flower.className}> Hey!</div>
-              </div>
-              </div>
+          <div className="flex flex-col  w-full h-full">
+                <div className="text-6xl"><span className={rubikScribble.className}> HEY!</span></div>
               <div className="text-xl inline-flex flex-col text-md md:text-lg  gap-4 mt-10 mb-8 bg-base-3 bg-opacity-60 md:bg-opacity-80 rounded-md p-10"  >
                   <ul className="opacity-100 text-white space-y-3.5">
                       <li>                      My name is Zoe Barkan and I’m a full-stack developer.

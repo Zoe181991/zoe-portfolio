@@ -24,7 +24,7 @@ export function Footer() {
           </a>
         </li>
       </ul>
-      <div className="text-xs mt-8 font-light">
+      <div className="text-xs mt-4 font-light">
         © Copyright 2023 by Zoe Barkan
       </div>
     </div>
