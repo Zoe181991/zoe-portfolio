@@ -9,6 +9,7 @@ const poppins = Poppins({
   weight: ["200", "300", "400", "500", "600"],
 });
 
+
 export const metadata: Metadata = {
   title: "Zoe Barkan",
   description: "full stack developer",
