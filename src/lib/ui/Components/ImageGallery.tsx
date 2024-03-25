@@ -30,7 +30,7 @@ export function ImageGallery({imagesURLS}: ImageGalleryProps) {
     }
 
     return (
-            <div id="gallery" className="relative  " >
+            <div id="gallery" className="relative max-h-fit  " >
                 <div className="overflow-hidden rounded-lg w-screen h-72  md:h-96 justify-center ">
                 { imagesURLS.map((image, index) => {
                         return (

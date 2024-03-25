@@ -18,7 +18,7 @@ export default function Home() {
                     <div className="text-sm lg:text-md mt-4">
                         NextJS | TypeScript | Drizzle ORM | TailwindCSS{" "}
                     </div>
-                    <div className="w-full flex flex-col mt-8 lg:flex-row grow shrink gap-8  sm:gap-16 md:gap-12 grow shrink  lg:gap-8">
+                    <div className="w-full flex flex-col mt-8 lg:flex-row grow shrink gap-8  sm:gap-16 md:gap-12 grow shrink  lg:gap-12">
                         <div className=" lg:w-1/2 w-full h-full">
                             <ImageGallery imagesURLS={ImageGalleryMukdamInspectionContent}/>
                         </div>
@@ -52,8 +52,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Footer />
+
         </main>
+        <Footer />
+
 
     </>
   );
