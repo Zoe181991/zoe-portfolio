@@ -8,14 +8,17 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-col bg-body-bg-dots ">
         <div className="bg-body-bg-shapes scroll-smooth	">
-          <div className="w-full flex flex-row justify-center p-24  max-h-fit min-h-10 ">
-            <div className="w-full max-w-desktop flex grow gap-4">
-              <div className="flex  flex-col basis-1/2">
-                <HeadLine text={"Pet App"} />
-                <div className="text-md mt-4">
-                  React | MongoDB | Vercel | ChakraUI | Node.js
-                </div>
-                <div className="text-white mt-8 flex flex-col gap-6 ">
+          <div className="w-full flex flex-col justify-center pt-8 pb-24 px-12 md:px-24  max-h-fit min-h-10 ">
+            <HeadLine text={"Mukdam Inspection System"} />
+            <div className="text-sm lg:text-md mt-4">
+              React | MongoDB | Vercel | ChakraUI | Node.js
+            </div>
+            <div className="w-full flex flex-col mt-8 lg:flex-row grow shrink gap-8  sm:gap-16 md:gap-12 grow shrink  lg:gap-12">
+              <div className=" lg:w-1/2 w-full h-full">
+                <ImageGallery imagesURLS={ImageGalleryPetAppContent}/>
+              </div>
+              <div className="h-4"></div>
+              <div className="flex flex-col h-full lg:w-1/2 text-white gap-6 lg:mt-0 ">
                   <p>
                     Get a pet today! Pawsitive adoptions allow you to get the pet you have always wished for.
                     Search for your pet and save it to your wishlist. You can register and adopt or foster it for a short period of time.                   </p>
@@ -27,18 +30,14 @@ export default function Home() {
                     Building the backend database using MongoDB.
                     Deploying the app using Vercel.
                   </p>
-                </div>
-              </div>
-              <div className="basis-1/2 flex flex-col gap-4 mt-8 justify-items-start">
-                <ImageGallery imagesURLS={ImageGalleryPetAppContent}/>
 
               </div>
             </div>
           </div>
         </div>
-        <Footer />
-
       </main>
+        <Footer />
     </>
   );
 }
+
