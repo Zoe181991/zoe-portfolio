@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from "next/image";
 import { useRouter } from 'next/navigation'
-
+import arrowsMaximize from "../../../../public/svg/arrowsMaximize.svg";
 
 interface ImageGalleryProps {
     imagesURLS:{text: string, src: string } [];
@@ -11,26 +11,7 @@ export function ImageGallery({imagesURLS}: ImageGalleryProps) {
     const router = useRouter()
 
     const [activeIndex, setActiveIndex] = React.useState(0);
-
-
-//     const nextPhoto = () => {
-//         if(activeIndex === imagesURLS.length-1) {
-//             setActiveIndex(0)
-//
-//         }else{
-//             setActiveIndex((prev) => (prev + 1) );
-//
-//         }
-//     }
-//     const previousPhoto = () => {
-//         if(activeIndex === 0) {
-//             setActiveIndex(imagesURLS.length-1)
-//
-//         } else{
-//             setActiveIndex((prev) => (prev - 1) );
-//
-//         }
-//     }
+    const [activeIndexModal, setActiveIndexModal] = React.useState(activeIndex);
 
     const handleNext = (index: number) => {
         console.log("activeIndex:", activeIndex, "index:", index)
@@ -44,6 +25,19 @@ export function ImageGallery({imagesURLS}: ImageGalleryProps) {
 
         }
     }
+
+    // const handleNextModal = (index: number) => {
+    //     console.log("activeIndex:", activeIndex, "index:", index)
+    //     if(activeIndex === imagesURLS.length-1) {
+    //         setActiveIndex(0)
+    //         router.push(`/projects/mukdam-crm/#slide_modal_${0}`)
+    //
+    //     }else{
+    //         setActiveIndex((prev) => (prev + 1) );
+    //         router.push(`/projects/mukdam-crm/#slide_modal_${index+1}`)
+    //
+    //     }
+    // }
 
     const handlePrevious = (index: number) => {
         console.log("activeIndex:", activeIndex, "index:", index)
@@ -59,11 +53,25 @@ export function ImageGallery({imagesURLS}: ImageGalleryProps) {
 
         }
     }
+    // const handlePreviousModal = (index: number) => {
+    //     console.log("activeIndex:", activeIndex, "index:", index)
+    //     if(activeIndex === 0) {
+    //         setActiveIndex(imagesURLS.length-1)
+    //         const newIndex = imagesURLS.length-1
+    //         router.push(`/projects/mukdam-crm/#slide_modal_${newIndex}`)
+    //
+    //     } else{
+    //         const newIndex = index-1
+    //         setActiveIndex((prev) => (prev - 1) );
+    //         router.push(`/projects/mukdam-crm/#slide_modal_${newIndex}`)
+    //
+    //     }
+    // }
 
     return (
-
+        <>
         <div className="carousel w-full">
-                { imagesURLS.map((image, index=1) => {
+                { imagesURLS.map((image, index) => {
                     return (
                         <>
                         <div id={`slide${index}`} className="carousel-item relative w-full">
@@ -72,12 +80,49 @@ export function ImageGallery({imagesURLS}: ImageGalleryProps) {
                                 <a onClick={()=>handlePrevious(index)} className="btn btn-circle">❮</a>
                                 <a onClick={()=>handleNext(index)} className="btn btn-circle">❯</a>
                             </div>
-                            <div className='absolute bottom-0 left-0 bg-base-2 w-full h-16  opacity-60 text-base-1 p-4'>{image.text}</div>
+                            <div className='absolute bottom-0 left-0 bg-base-2 w-full h-16  bg-opacity-60 text-base-1 p-4'>
+
+                               <div className="flex justify-between items-center">
+                                  <span className="opacity-60"> {image.text}</span>
+                                   <button className="btn-xs" onClick={()=>document.getElementById('my_modal_3').showModal()}><Image src={arrowsMaximize} alt={"maximize"} width={24} height={24} /></button>
+
+                               </div>
+
+                            </div>
                         </div>
                         </>
                     )
                 })}
         </div>
+
+
+
+            <dialog id="my_modal_3" className="modal">
+                <div className="modal-box w-11/12 max-w-5xl h-screen">
+                    <form method="dialog">
+                        {/* if there is a button in form, it will close the modal */}
+                        <button className="btn btn-md btn-circle btn-ghost absolute right-2 top-2 text-lg">✕</button>
+                    </form>
+                    
+                            { imagesURLS.map((image, index) => {
+                                    return (
+                                        <>
+                                        <div key={index} className={(index===activeIndex)? " opacity-100 duration-700 ease-in-out " : "hidden"}>
+                                            <h3 className="font-bold text-lg">{image.text}</h3>
+                                            <Image  src={image.src} alt={image.text} layout="responsive" width={680} height={480} />
+                                        </div>
+                                        </>
+                                    )
+                                })}
+
+                </div>
+                <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                </form>
+            </dialog>
+
+
+    </>
 
 
 
