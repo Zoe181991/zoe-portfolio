@@ -12,6 +12,7 @@ export function ImageGallery({imagesURLS, projectName}: ImageGalleryProps) {
     const router = useRouter()
 
     const [activeIndex, setActiveIndex] = React.useState(0);
+    const [activeIndexModal, setActiveIndexModal] = React.useState(activeIndex);
 
     const handleNext = (index: number) => {
         console.log("activeIndex:", activeIndex, "index:", index)
@@ -44,19 +45,19 @@ export function ImageGallery({imagesURLS, projectName}: ImageGalleryProps) {
 
     const handleNextModal = () => {
         console.log("activeIndex:", activeIndex)
-        if(activeIndex === imagesURLS.length-1) {
-            setActiveIndex(0)
+        if(activeIndexModal === imagesURLS.length-1) {
+            setActiveIndexModal(0)
         }else{
-            setActiveIndex((prev) => (prev + 1) );
+            setActiveIndexModal((prev) => (prev + 1) );
         }
 
     }
     const handlePreviousModal = () => {
         console.log("activeIndex:", activeIndex)
-        if(activeIndex === 0) {
-            setActiveIndex(imagesURLS.length-1)
+        if(activeIndexModal === 0) {
+            setActiveIndexModal(imagesURLS.length-1)
         } else{
-            setActiveIndex((prev) => (prev - 1) );
+            setActiveIndexModal((prev) => (prev - 1) );
         }
 
     }
@@ -100,7 +101,7 @@ export function ImageGallery({imagesURLS, projectName}: ImageGalleryProps) {
                     { imagesURLS.map((image, indexModal) => {
                                     return (
                                         <>
-                                        <div key={indexModal} className={(indexModal===activeIndex)? " w-full opacity-100 duration-700 ease-in-out " : "hidden"}>
+                                        <div key={indexModal} className={(indexModal===activeIndexModal)? " w-full opacity-100 duration-700 ease-in-out " : "hidden"}>
                                             <h3 className="font-bold text-lg mb-2">{image.text}</h3>
                                             <div className="carousel-item relative">
                                             <Image  src={image.src} alt={image.text} layout="responsive" width={680} height={480} />
