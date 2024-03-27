@@ -25,6 +25,10 @@ export const ImageGalleryMukdamCrmContent: ImageGalleryProps[] = [
     text: "Token card view with edit options",
     src: "/images/projects/mukdam-crm/5.png",
   },
+  {
+    text: "Token card view with edit options",
+    src: "/images/projects/mukdam-crm/demoMukdamCRM.gif",
+  },
 ];
 
 export const ImageGalleryMukdamInspectionContent: ImageGalleryProps[] = [  {
