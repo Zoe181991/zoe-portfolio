@@ -29,7 +29,7 @@ export const CardContent: CardProps[] = [
     id: 3,
     title: "Pet App",
     description: "A smoke that is a byproduct of fire.",
-    image: "/images/sea.jpg",
+    image: "/images/projects/pet-app/demoPetApp.gif",
     link: "/projects/pet-app",
     skills: ["React", "NodeJS", "ChakraUI", "MongoDB", "Vercel"],
   },

@@ -59,6 +59,9 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
     <>
       <div id="carousel" className="carousel w-full">
         {imagesURLS.map((image, index) => {
+          // @ts-ignore
+          // @ts-ignore
+          // @ts-ignore
           return (
             <>
               <div
@@ -87,7 +90,7 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                     <button
                       className="btn-xs"
                       onClick={() =>
-                        document.getElementById("my_modal_3").showModal()
+                        document.getElementById("open_gallery").showModal()
                       }
                     >
                       <Image
@@ -105,7 +108,7 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
         })}
       </div>
 
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="open_gallery" className="modal">
         <div className="modal-box w-11/12 max-w-5xl h-screen">
           <form method="dialog">
             <button className="btn btn-md btn-circle btn-ghost absolute right-2 top-2 text-lg">
