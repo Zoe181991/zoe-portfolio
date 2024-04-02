@@ -72,35 +72,19 @@ export const ImageGalleryPetAppContent: ImageGalleryProps[] = [
   },
   {
     text: "Shortcuts for account management",
-    src: "/images/projects/pet-app/5.png",
-  },
-  {
-    text: "Related tokens for the specific account",
     src: "/images/projects/pet-app/3.png",
   },
   {
-    text: "Token card view with edit options",
+    text: "Related tokens for the specific account",
     src: "/images/projects/pet-app/4.png",
   },
   {
     text: "Token card view with edit options",
-    src: "/images/projects/pet-app/10.png",
+    src: "/images/projects/pet-app/5.png",
   },
   {
     text: "Token card view with edit options",
-    src: "/images/projects/pet-app/11.png",
-  },
-  {
-    text: "Token card view with edit options",
-    src: "/images/projects/pet-app/13.png",
-  },
-  {
-    text: "Token card view with edit options",
-    src: "/images/projects/pet-app/14.png",
-  },
-  {
-    text: "Token card view with edit options",
-    src: "/images/projects/pet-app/00.png",
+    src: "/images/projects/pet-app/6.png",
   },
   {
     text: "Token card view with edit options",
@@ -112,10 +96,20 @@ export const ImageGalleryPetAppContent: ImageGalleryProps[] = [
   },
   {
     text: "Token card view with edit options",
-    src: "/images/projects/pet-app/6.png",
+    src: "/images/projects/pet-app/11.png",
   },
+
   {
     text: "Token card view with edit options",
     src: "/images/projects/pet-app/12.png",
+  },
+
+  {
+    text: "Token card view with edit options",
+    src: "/images/projects/pet-app/13.png",
+  },
+  {
+    text: "Token card view with edit options",
+    src: "/images/projects/pet-app/14.png",
   },
 ];
