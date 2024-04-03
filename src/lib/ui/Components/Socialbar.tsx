@@ -1,6 +1,6 @@
 import Image from "next/image";
 import linkedinIcon from "../../../../public/svg/linkedinIcon.svg";
-import githubIcon from "../../../../public/svg/githubIcon.svg";
+import githubIcon from "../../../../public/svg/githubIconColored.svg";
 import mailIcon from "../../../../public/svg/mailIcon.svg";
 
 export function Socialbar() {
