@@ -24,6 +24,7 @@ const config: Config = {
         "base-2": "rgb(var(--color-base-2) / <alpha-value>)",
         "base-3": "rgb(var(--color-base-3) / <alpha-value>)",
         "base-4": "rgb(var(--color-base-4) / <alpha-value>)",
+        "base-5": "rgb(var(--color-base-5) / <alpha-value>)",
       },
     },
   },

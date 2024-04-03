@@ -87,7 +87,7 @@ export const ImageGalleryPetAppContent: ImageGalleryProps[] = [
     src: "/images/projects/pet-app/6.png",
   },
   {
-    text: "Popup message for actions - save, foster, adopt a pet",
+    text: "Popup messages for different actions",
     src: "/images/projects/pet-app/7.png",
   },
   {
