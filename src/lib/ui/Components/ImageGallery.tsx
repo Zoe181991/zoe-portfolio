@@ -59,9 +59,6 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
     <>
       <div id="carousel" className="carousel w-full">
         {imagesURLS.map((image, index) => {
-          // @ts-ignore
-          // @ts-ignore
-          // @ts-ignore
           return (
             <>
               <div
@@ -84,9 +81,9 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                     ❯
                   </a>
                 </div>
-                <div className="absolute bottom-0 left-0 bg-base-2 w-full h-16  bg-opacity-80 text-base-1 p-4">
+                <div className="absolute bottom-0 left-0 bg-base-2 w-full h-16  bg-opacity-80 text-base-1 py-2 px-4">
                   <div className="flex justify-between items-center">
-                    <span className="text-white"> {image.text}</span>
+                    <span className="text-white pb-2"> {image.text}</span>
                     <button
                       className="btn-xs"
                       onClick={() =>

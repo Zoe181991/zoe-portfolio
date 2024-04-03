@@ -63,53 +63,61 @@ export const ImageGalleryMukdamInspectionContent: ImageGalleryProps[] = [
 
 export const ImageGalleryPetAppContent: ImageGalleryProps[] = [
   {
-    text: "Accounts table",
+    text: "Home page",
     src: "/images/projects/pet-app/1.png",
   },
   {
-    text: "Account card view with edit options",
+    text: "Search page",
     src: "/images/projects/pet-app/2.png",
   },
   {
-    text: "Shortcuts for account management",
+    text: "Search results - pet cards",
     src: "/images/projects/pet-app/3.png",
   },
   {
-    text: "Related tokens for the specific account",
+    text: "Pet details page",
     src: "/images/projects/pet-app/4.png",
   },
   {
-    text: "Token card view with edit options",
+    text: "Login modal",
     src: "/images/projects/pet-app/5.png",
   },
   {
-    text: "Token card view with edit options",
+    text: "My pets page for logged in users - saved pets, fostered pets, adopted pets",
     src: "/images/projects/pet-app/6.png",
   },
   {
-    text: "Token card view with edit options",
+    text: "Popup message for actions - save, foster, adopt a pet",
+    src: "/images/projects/pet-app/7.png",
+  },
+  {
+    text: "Navbar options and user logged in page",
     src: "/images/projects/pet-app/8.png",
   },
   {
-    text: "Token card view with edit options",
+    text: "Update password for logged in users",
+    src: "/images/projects/pet-app/9.png",
+  },
+  {
+    text: "Admin home page with updated data",
     src: "/images/projects/pet-app/10.png",
   },
   {
-    text: "Token card view with edit options",
+    text: "Admin dashboard with pets table - edit options",
     src: "/images/projects/pet-app/11.png",
   },
 
   {
-    text: "Token card view with edit options",
+    text: "Admin dashboard with users table - view profile option",
     src: "/images/projects/pet-app/12.png",
   },
 
   {
-    text: "Token card view with edit options",
+    text: "Add a new pet",
     src: "/images/projects/pet-app/13.png",
   },
   {
-    text: "Token card view with edit options",
+    text: "Register a new pet",
     src: "/images/projects/pet-app/14.png",
   },
 ];
