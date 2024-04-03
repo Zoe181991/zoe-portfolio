@@ -81,13 +81,13 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                     ❯
                   </a>
                 </div>
-                <div className="absolute bottom-0 left-0 bg-base-2 w-full h-16  bg-opacity-80 text-base-1 p-4">
+                <div className="absolute bottom-0 left-0 bg-base-2 w-full h-16  bg-opacity-80 text-base-1 py-2 px-4">
                   <div className="flex justify-between items-center">
-                    <span className="text-white"> {image.text}</span>
+                    <span className="text-white pb-2"> {image.text}</span>
                     <button
                       className="btn-xs"
                       onClick={() =>
-                        document.getElementById("my_modal_3").showModal()
+                        document.getElementById("open_gallery").showModal()
                       }
                     >
                       <Image
@@ -105,7 +105,7 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
         })}
       </div>
 
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="open_gallery" className="modal">
         <div className="modal-box w-11/12 max-w-5xl h-screen">
           <form method="dialog">
             <button className="btn btn-md btn-circle btn-ghost absolute right-2 top-2 text-lg">

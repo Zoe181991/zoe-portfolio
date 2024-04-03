@@ -3,11 +3,8 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    './src/lib/**/*.{js,ts,jsx,tsx,mdx}',
-
+    "./src/lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -27,10 +24,10 @@ const config: Config = {
         "base-2": "rgb(var(--color-base-2) / <alpha-value>)",
         "base-3": "rgb(var(--color-base-3) / <alpha-value>)",
         "base-4": "rgb(var(--color-base-4) / <alpha-value>)",
+        "base-5": "rgb(var(--color-base-5) / <alpha-value>)",
       },
     },
   },
   plugins: [require("daisyui")],
-
 };
 export default config;

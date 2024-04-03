@@ -11,6 +11,7 @@
   --color-base-2: 165 140 249;
   --color-base-3: 83 126 149;
   --color-base-4: 150 245 233;
+  --color-base-5: 48  8 110;
 }
 
 @media (prefers-color-scheme: dark) {

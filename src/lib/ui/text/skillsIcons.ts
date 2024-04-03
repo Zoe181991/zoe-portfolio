@@ -12,7 +12,7 @@ export enum SkillsIcons {
   Firebase = "firebaseIcon",
   Github = "githubIcon",
   HTML5 = "html5Icon",
-  JS = "jsIcon",
+  JavaScript = "javaScriptIcon",
   NestJS = "nestJSIcon",
   SQL = "sqlIcon",
   Vercel = "vercelIcon",
