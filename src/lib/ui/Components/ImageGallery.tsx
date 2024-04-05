@@ -84,11 +84,9 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                 <div className="absolute bottom-0 left-0 bg-base-2 w-full h-16  bg-opacity-80 text-base-1 py-2 px-4">
                   <div className="flex justify-between items-center">
                     <span className="text-white pb-2"> {image.text}</span>
-                    <button
-                      className="btn-xs"
-                      onClick={() =>
-                        document.getElementById("open_gallery").showModal()
-                      }
+                    <label
+                      htmlFor="my_modal_6"
+                      className="btn bg-opacity-0   hover:bg-white hover:bg-opacity-50 border-none "
                     >
                       <Image
                         src={arrowsMaximize}
@@ -96,13 +94,65 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                         width={24}
                         height={24}
                       />
-                    </button>
+                    </label>
                   </div>
                 </div>
               </div>
             </>
           );
         })}
+      </div>
+
+      <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+      <div className="modal" role="dialog">
+        <div className="modal-box w-11/12 max-w-5xl">
+          <div className="carousel w-full">
+            {imagesURLS.map((image, indexModal) => {
+              return (
+                <>
+                  <div
+                    key={indexModal}
+                    className={
+                      indexModal === activeIndexModal
+                        ? " w-full opacity-100 duration-700 ease-in-out "
+                        : "hidden"
+                    }
+                  >
+                    <div className=" mt-0 modal-action flex justify-between items-center mb-8">
+                      <h3 className="font-bold text-lg">{image.text}</h3>
+                      <label
+                        htmlFor="my_modal_6"
+                        className="btn rounded-full hover:bg-opacity-30 hover:bg-white"
+                      >
+                        ✕
+                      </label>
+                    </div>
+                    <div className="carousel-item">
+                      <Image
+                        src={image.src}
+                        alt={image.text}
+                        layout="responsive"
+                        width={680}
+                        height={480}
+                      />
+                      <div className="absolute flex opacity-60 justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a
+                          onClick={handlePreviousModal}
+                          className="btn btn-circle"
+                        >
+                          ❮
+                        </a>
+                        <a onClick={handleNextModal} className="btn btn-circle">
+                          ❯
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
+          </div>
+        </div>
       </div>
 
       <dialog id="open_gallery" className="modal">
