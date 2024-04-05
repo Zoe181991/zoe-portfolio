@@ -1,12 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    output: "export",
-    reactStrictMode: true,
-    distDir: "dist",
-    images: {
-        unoptimized: true,
-    }
 
+const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? "/zoe-portfolio" : "";
+const nextConfig = {
+  basePath: basePath,
+  output: "export",
+  reactStrictMode: true,
+  distDir: "dist",
+  images: {
+    unoptimized: true,
+    path: `${basePath}/_next/image`,
+  },
 };
 
 export default nextConfig;
