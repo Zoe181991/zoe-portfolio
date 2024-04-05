@@ -16,4 +16,5 @@ export const MySkills: string[] = [
   "TailwindCSS",
   "ChakraUI",
   "Bootstrap",
+  "Docker",
 ];
