@@ -16,4 +16,5 @@ export enum SkillsIcons {
   NestJS = "nestJSIcon",
   SQL = "sqlIcon",
   Vercel = "vercelIcon",
+  Docker = "dockerIcon",
 }
