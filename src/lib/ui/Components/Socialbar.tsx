@@ -1,7 +1,7 @@
 import Image from "next/image";
 import linkedinIcon from "../../../../public/svg/linkedinIcon.svg";
 import githubIcon from "../../../../public/svg/githubIconColored.svg";
-import mailIcon from "../../../../dist/svg/mailIcon.svg";
+import mailIcon from "../../../../public/svg/mailIcon.svg";
 
 const config = require("../../../../next.config.mjs");
 export function Socialbar() {
