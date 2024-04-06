@@ -41,7 +41,7 @@ export function AboutSection({ props }: props) {
           <div className="flex  gap-6 w-full flex-wrap  ">
             {MySkills.map((skill, index) => {
               const skillIcon = SkillsIcons[skill as keyof typeof SkillsIcons];
-              const url = `/svg/skills/${skillIcon}.svg`;
+              const url = `/zoe-portfolio/svg/skills/${skillIcon}.svg`;
               return (
                 <div className="flex flex-col items-center">
                   <Image

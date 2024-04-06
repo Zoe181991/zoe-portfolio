@@ -9,7 +9,6 @@ const nextConfig = {
   distDir: "dist",
   images: {
     unoptimized: true,
-    path: `${basePath}/_next/image`,
   },
 };
 

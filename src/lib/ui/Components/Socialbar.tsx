@@ -1,8 +1,9 @@
 import Image from "next/image";
 import linkedinIcon from "../../../../public/svg/linkedinIcon.svg";
 import githubIcon from "../../../../public/svg/githubIconColored.svg";
-import mailIcon from "../../../../public/svg/mailIcon.svg";
+import mailIcon from "../../../../dist/svg/mailIcon.svg";
 
+const config = require("../../../../next.config.mjs");
 export function Socialbar() {
   return (
     <ul className="hidden md:flex md:flex-row md:gap-6">
@@ -15,7 +16,7 @@ export function Socialbar() {
           target="_blank"
         >
           <Image
-            src={linkedinIcon}
+            src={"/zoe-portfolio/svg/linkedinIcon.svg"}
             alt={""}
             width="24"
             className="fill-base-2"
