@@ -9,7 +9,7 @@ const nextConfig = {
   distDir: "dist",
   images: {
     unoptimized: true,
-    path: isProd ? "/zoe-portfolio" : "" },
+    path: '/zoe-portfolio' },
 };
 
 export default nextConfig;
