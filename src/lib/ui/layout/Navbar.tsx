@@ -30,7 +30,7 @@ export function Navbar() {
       <div
         className={
           mobileNav
-            ? "transition ease-in-out duration-150 pb-6 md:hidden z-10  border-b-2 border-base-1 flex  h-1/4  flex-col fixed top-20 left-0 bg-base-1   w-full "
+            ? "transition ease-in-out duration-150 pb-6 md:hidden z-10  flex  h-1/4  flex-col fixed top-20 left-0 bg-base-1  w-full "
             : "hidden"
         }
       >
