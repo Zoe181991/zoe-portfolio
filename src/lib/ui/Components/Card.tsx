@@ -35,7 +35,7 @@ export function Card({ title, description, image, link, skills }: CardProps) {
           {skills &&
             skills.map((skill, index) => {
               const skillIcon = SkillsIcons[skill as keyof typeof SkillsIcons];
-              const url = `${process.env.BASE_PATH}/svg/skills/${skillIcon}.svg`;
+              const url = `/svg/skills/${skillIcon}.svg`;
               return (
                 <Image
                   src={url}

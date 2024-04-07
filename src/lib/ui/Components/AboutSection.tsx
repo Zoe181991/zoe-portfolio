@@ -41,7 +41,7 @@ export function AboutSection({ props }: props) {
           <div className="flex grid grid-cols-5 gap-y-4 lg:gap-4 w-full   ">
             {MySkills.map((skill, index) => {
               const skillIcon = SkillsIcons[skill as keyof typeof SkillsIcons];
-              const url = `${process.env.BASE_PATH}/svg/skills/${skillIcon}.svg`;
+              const url = `/svg/skills/${skillIcon}.svg`;
               return (
                 <div className="flex flex-col items-center">
                   <Image
@@ -63,7 +63,7 @@ export function AboutSection({ props }: props) {
       <div className="flex lg:w-1/3  group hover:rotate-6 relative z-10 transition transition-all ease-in-out duration-250">
         <Image
           unoptimized
-          src={`${process.env.BASE_PATH}/images/profileImage1.jpg`}
+          src={`/images/profileImage1.jpg`}
           width={450}
           height={600}
           alt="profile image"

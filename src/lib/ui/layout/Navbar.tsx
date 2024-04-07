@@ -8,13 +8,9 @@ import { MobileNav } from "../Components/MobileNav";
 export function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
 
-  const homePage =
-    process.env.BASE_PATH === "/zoe-portfolio"
-      ? `${process.env.BASE_PATH}`
-      : "/";
   return (
     <nav className="flex h-20 flex-row justify-between py-6 px-12 md:px-16 lg:px-24  items-center">
-      <a href={homePage}>
+      <a href="/">
         <div className=" flex items-center gap-1 cursor-pointer ">
           <Image className="logoIcon" src={logo} alt={"Zoe"} width={36} />
         </div>
