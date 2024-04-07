@@ -35,13 +35,13 @@ export function AboutSection({ props }: props) {
           </ul>
         </div>
         <div className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-60 md:bg-opacity-80 rounded-md p-10">
-          <div className="text-4xl font-semibold mb-5 text-white">
+          <div className="flex text-4xl font-semibold mb-5 text-white">
             <span className={rubikScribble.className}> MY SKILLS</span>
           </div>
           <div className="flex  gap-6 w-full flex-wrap  ">
             {MySkills.map((skill, index) => {
               const skillIcon = SkillsIcons[skill as keyof typeof SkillsIcons];
-              const url = `/${process.env.BASE_PATH}/svg/skills/${skillIcon}.svg`;
+              const url = `${process.env.BASE_PATH}/svg/skills/${skillIcon}.svg`;
               return (
                 <div className="flex flex-col items-center">
                   <Image

@@ -13,7 +13,7 @@ export const CardContent: CardProps[] = [
     title: "Mukdam inspection system",
     description: "Control system for pension reports for monthly inspection",
     image: `${process.env.BASE_PATH}/images/projects/mukdam-inspection/demoMukdamInspection.gif`,
-    link: `${process.env.BASE_PATH}/projects/mukdam-inspection`,
+    link: `/projects/mukdam-inspection`,
     skills: ["PostgreSQL", "NextJS", "NestJS", "TypeScript", "TailwindCSS"],
   },
   {
@@ -22,7 +22,7 @@ export const CardContent: CardProps[] = [
     description:
       "CRM system to manage Accounts and Tokens with full CRUD options.",
     image: `${process.env.BASE_PATH}/images/projects/mukdam-crm/demoMukdamCRM.gif`,
-    link: `${process.env.BASE_PATH}/projects/mukdam-crm`,
+    link: `/projects/mukdam-crm`,
     skills: ["NextJS", "TypeScript", "TailwindCSS", "PostgreSQL"],
   },
   {
@@ -30,7 +30,7 @@ export const CardContent: CardProps[] = [
     title: "Pet App",
     description: "A full-stack app for pet adoption.",
     image: `${process.env.BASE_PATH}/images/projects/pet-app/demoPetApp.gif`,
-    link: `${process.env.BASE_PATH}/projects/pet-app`,
+    link: `/projects/pet-app`,
     skills: ["React", "NodeJS", "ChakraUI", "MongoDB", "Vercel"],
   },
 ];

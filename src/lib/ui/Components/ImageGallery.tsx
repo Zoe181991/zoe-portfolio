@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import arrowsMaximize from "../../../../public/svg/arrowsMaximize.svg";
 
 interface ImageGalleryProps {
   imagesURLS: { text: string; src: string }[];
@@ -89,7 +88,7 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                       className="btn bg-opacity-0   hover:bg-white hover:bg-opacity-50 border-none "
                     >
                       <Image
-                        src={arrowsMaximize}
+                        src={`${process.env.BASE_PATH}svg/arrowsMaximize.svg`}
                         alt={"maximize"}
                         width={24}
                         height={24}
