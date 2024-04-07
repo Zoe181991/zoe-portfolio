@@ -4,7 +4,7 @@ export function MobileNav() {
   return (
     <div className="flex  flex-col  items-center text-center w-full border-b-2 border-white ">
       <div className="py-2 w-full text-[#f98d55] hover:bg-[#f98d55]  hover:text-base-1 font-semibold hover:cursor-pointer hover:scale-125  transition ease-in-out duration-200">
-        <a href={`${process.env.BASE_PATH}/#aboutMe"`}>about</a>
+        <a href={`${process.env.BASE_PATH}/#aboutMe`}>about</a>
       </div>
       <div className="py-2 w-full text-[#c974a3] hover:bg-[#c974a3]  hover:text-base-1 font-semibold  hover:scale-125 hover:cursor-pointer  transition ease-in-out duration-300">
         <a
