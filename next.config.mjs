@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === "production";
-const basePath = isProd ? "/zoe-portfolio" : "";
+// const isProd = process.env.NODE_ENV === "production";
+const basePath = "";
 const nextConfig = {
   basePath: basePath,
   assetPrefix: basePath,
