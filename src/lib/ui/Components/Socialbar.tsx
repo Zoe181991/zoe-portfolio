@@ -12,7 +12,7 @@ export function Socialbar() {
           target="_blank"
         >
           <Image
-            src={"/svg/linkedinIcon.svg"}
+            src={`${process.env.BASE_PATH}/svg/linkedinIcon.svg`}
             alt={""}
             width="24"
             className="fill-base-2"
@@ -22,13 +22,21 @@ export function Socialbar() {
 
       <li className="hover:cursor-pointer hover:scale-125 transition ease-in-out duration-150">
         <a href="https://github.com/Zoe181991" target="_blank">
-          <Image src={"/svg/githubIconColored.svg"} alt={""} width="24" />
+          <Image
+            src={`${process.env.BASE_PATH}/svg/githubIconColored.svg`}
+            alt={""}
+            width="24"
+          />
         </a>
       </li>
 
       <li className="hover:cursor-pointer hover:scale-125 transition ease-in-out duration-150">
         <a href="mailto:zoebarkan@gmail.com" target="_blank">
-          <Image src={"/svg/mailIcon.svg"} alt={""} width={"24"} />
+          <Image
+            src={`${process.env.BASE_PATH}/svg/mailIcon.svg`}
+            alt={""}
+            width={"24"}
+          />
         </a>
       </li>
     </ul>
