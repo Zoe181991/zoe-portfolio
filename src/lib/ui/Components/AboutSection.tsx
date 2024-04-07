@@ -62,7 +62,7 @@ export function AboutSection({ props }: props) {
       <div className="flex group hover:rotate-6 relative z-10 transition transition-all ease-in-out duration-250">
         <Image
           unoptimized
-          src={`/${process.env.BASE_PATH}/images/profileImage1.png`}
+          src={`${process.env.BASE_PATH}/images/profileImage1.png`}
           width={450}
           height={600}
           alt="profile image"

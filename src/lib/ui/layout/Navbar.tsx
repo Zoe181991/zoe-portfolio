@@ -8,9 +8,11 @@ import { MobileNav } from "../Components/MobileNav";
 export function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
 
+  const basePath = require("../../../../next.config.mjs").basePath;
+  const homePage = basePath ? "/".concat(basePath) : "/";
   return (
     <nav className="flex h-20 flex-row justify-between py-6 px-12 md:px-16 lg:px-24  items-center">
-      <a href="/">
+      <a href={homePage}>
         <div className=" flex items-center gap-1 cursor-pointer ">
           <Image className="logoIcon" src={logo} alt={"Zoe"} width={36} />
         </div>
