@@ -12,13 +12,13 @@ interface props {
 }
 export function AboutSection({ props }: props) {
   return (
-    <div className=" flex flex-col items-center lg:items-start lg:flex-row h-full gap-4 lg:gap-12 ">
-      <div className="flex lg:w-2/3 flex-col h-full max-w-2xl">
+    <div className="w-full flex flex-col items-center lg:items-start lg:flex-row h-full gap-4 lg:gap-12 ">
+      <div className="flex w-full lg:w-2/3 flex-col h-full max-w-2xl">
         <div className="text-6xl font-semibold">
           <span className={rubikScribble.className}> HEY!</span>
         </div>
-        <div className="text-xl inline-flex flex-col text-md md:text-lg  gap-4 mt-10 mb-8 bg-base-3 bg-opacity-60 md:bg-opacity-80 rounded-md p-10">
-          <ul className="opacity-100 text-white space-y-3.5">
+        <div className=" inline-flex flex-col text-sm md:text-lg  gap-4 mt-10 mb-8 bg-base-3 bg-opacity-60 md:bg-opacity-80 rounded-md p-6 lg:p-10">
+          <ul className="opacity-100 text-md lg:text-lg text-white space-y-3.5">
             <li> My name is Zoe Barkan and I’m a full-stack developer.</li>
             <li>
               I love coding, learning new technologies and finding the best way
@@ -34,11 +34,11 @@ export function AboutSection({ props }: props) {
             </li>
           </ul>
         </div>
-        <div className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-60 md:bg-opacity-80 rounded-md p-10">
+        <div className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-60 md:bg-opacity-80 rounded-md  p-6 lg:p-10">
           <div className="flex text-4xl font-semibold mb-5 text-white">
             <span className={rubikScribble.className}> MY SKILLS</span>
           </div>
-          <div className="flex  gap-6 w-full flex-wrap  ">
+          <div className="flex grid grid-cols-5 gap-y-4 lg:gap-4 w-full   ">
             {MySkills.map((skill, index) => {
               const skillIcon = SkillsIcons[skill as keyof typeof SkillsIcons];
               const url = `${process.env.BASE_PATH}/svg/skills/${skillIcon}.svg`;
@@ -47,9 +47,10 @@ export function AboutSection({ props }: props) {
                   <Image
                     src={url}
                     alt={skill}
-                    width={40}
-                    height={40}
+                    width={35}
+                    height={35}
                     key={index}
+                    quality={75}
                   />
                   <span className="text-white text-xs mt-2">{skill}</span>
                 </div>

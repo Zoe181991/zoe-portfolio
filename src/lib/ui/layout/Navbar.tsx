@@ -8,8 +8,10 @@ import { MobileNav } from "../Components/MobileNav";
 export function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
 
-  const basePath = require("../../../../next.config.mjs").basePath;
-  const homePage = basePath ? "/".concat(basePath) : "/";
+  const homePage =
+    process.env.BASE_PATH === "/zoe-portfolio"
+      ? `${process.env.BASE_PATH}`
+      : "/";
   return (
     <nav className="flex h-20 flex-row justify-between py-6 px-12 md:px-16 lg:px-24  items-center">
       <a href={homePage}>
@@ -30,7 +32,7 @@ export function Navbar() {
       <div
         className={
           mobileNav
-            ? "transition ease-in-out duration-150 pb-6 md:hidden z-10  flex  h-1/4  flex-col fixed top-20 left-0 bg-base-1  w-full "
+            ? "transition ease-in-out duration-150 pb-6 md:hidden z-10  flex  h-1/4  flex-col absolute top-0 mt-20 left-0 bg-base-1  w-full "
             : "hidden"
         }
       >

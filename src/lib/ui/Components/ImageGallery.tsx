@@ -82,17 +82,33 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                 </div>
                 <div className="absolute bottom-0 left-0 bg-base-2 w-full h-16  bg-opacity-80 text-base-1 py-2 px-4">
                   <div className="flex justify-between items-center">
-                    <span className="text-white pb-2"> {image.text}</span>
+                    <span className=" text-base-1 pb-2"> {image.text}</span>
                     <label
                       htmlFor="my_modal_6"
                       className="btn bg-opacity-0   hover:bg-white hover:bg-opacity-50 border-none "
                     >
-                      <Image
-                        src={`${process.env.BASE_PATH}/svg/arrowsMaximize.svg`}
-                        alt={"maximize"}
-                        width={24}
-                        height={24}
-                      />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="black"
+                        stroke="black"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        className="icon icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M16 4l4 0l0 4" />
+                        <path d="M14 10l6 -6" />
+                        <path d="M8 20l-4 0l0 -4" />
+                        <path d="M4 20l6 -6" />
+                        <path d="M16 20l4 0l0 -4" />
+                        <path d="M14 14l6 6" />
+                        <path d="M8 4l-4 0l0 4" />
+                        <path d="M4 4l6 6" />
+                      </svg>
                     </label>
                   </div>
                 </div>
@@ -134,7 +150,7 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                         width={680}
                         height={480}
                       />
-                      <div className="absolute flex opacity-60 justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <div className="absolute flex opacity-60 justify-between transform -translate-y-1/2 left-10 right-10 top-2/3">
                         <a
                           onClick={handlePreviousModal}
                           className="btn btn-circle"
