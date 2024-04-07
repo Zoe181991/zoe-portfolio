@@ -66,6 +66,7 @@ export function AboutSection({ props }: props) {
           width={450}
           height={600}
           alt="profile image"
+          loading={"lazy"}
         />
 
         <div className=" group-hover:w-[calc(100%+1.5rem)] group-hover:h-[calc(100%+1.5rem)] group-hover:rounded-sm group-hover:-bottom-5 group-hover:-left-5  group-hover:bg-gradient-to-r group-hover:from-base-2 group-hover:to-base-4 group-hover:absolute group-hover:-z-10 "></div>
