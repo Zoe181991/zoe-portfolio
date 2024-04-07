@@ -1,7 +1,7 @@
 import Image from "next/image";
-import linkedinIcon from "../../../../public/svg/linkedinIcon.svg";
-import githubIconColored from "../../../../public/svg/githubIconColored.svg";
-import mailIcon from "../../../../public/svg/mailIcon.svg";
+import linkedinIcon from "../../../../public/linkedinIcon.svg";
+import githubIconColored from "../../../../public/githubIconColored.svg";
+import mailIcon from "../../../../public/mailIcon.svg";
 export function Socialbar() {
   return (
     <ul className="hidden md:flex md:flex-row md:gap-6">
