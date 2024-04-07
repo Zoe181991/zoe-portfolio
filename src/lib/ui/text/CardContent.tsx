@@ -12,8 +12,8 @@ export const CardContent: CardProps[] = [
     id: 1,
     title: "Mukdam inspection system",
     description: "Control system for pension reports for monthly inspection",
-    image: "/images/projects/mukdam-inspection/demoMukdamInspection.gif",
-    link: "/projects/mukdam-inspection",
+    image: `${process.env.BASE_PATH}/images/projects/mukdam-inspection/demoMukdamInspection.gif`,
+    link: `${process.env.BASE_PATH}/projects/mukdam-inspection`,
     skills: ["PostgreSQL", "NextJS", "NestJS", "TypeScript", "TailwindCSS"],
   },
   {
@@ -21,16 +21,16 @@ export const CardContent: CardProps[] = [
     title: "Mukdam CRM system",
     description:
       "CRM system to manage Accounts and Tokens with full CRUD options.",
-    image: "/images/projects/mukdam-crm/demoMukdamCRM.gif",
-    link: "/projects/mukdam-crm",
+    image: `${process.env.BASE_PATH}/images/projects/mukdam-crm/demoMukdamCRM.gif`,
+    link: `${process.env.BASE_PATH}/projects/mukdam-crm`,
     skills: ["NextJS", "TypeScript", "TailwindCSS", "PostgreSQL"],
   },
   {
     id: 3,
     title: "Pet App",
     description: "A full-stack app for pet adoption.",
-    image: "/images/projects/pet-app/demoPetApp.gif",
-    link: "/projects/pet-app",
+    image: `${process.env.BASE_PATH}/images/projects/pet-app/demoPetApp.gif`,
+    link: `${process.env.BASE_PATH}/projects/pet-app`,
     skills: ["React", "NodeJS", "ChakraUI", "MongoDB", "Vercel"],
   },
 ];

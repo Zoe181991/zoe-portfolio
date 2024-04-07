@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Rubik_Scribble } from "next/font/google";
-import { Card, CardContent, SkillsIcons } from "@/lib/ui";
+import { SkillsIcons } from "@/lib/ui";
 import { MySkills } from "@/lib/ui/text/MySkills";
 
 const rubikScribble = Rubik_Scribble({ subsets: ["latin"], weight: ["400"] });
@@ -41,7 +41,7 @@ export function AboutSection({ props }: props) {
           <div className="flex  gap-6 w-full flex-wrap  ">
             {MySkills.map((skill, index) => {
               const skillIcon = SkillsIcons[skill as keyof typeof SkillsIcons];
-              const url = `/svg/skills/${skillIcon}.svg`;
+              const url = `/${process.env.BASE_PATH}/svg/skills/${skillIcon}.svg`;
               return (
                 <div className="flex flex-col items-center">
                   <Image
@@ -62,7 +62,7 @@ export function AboutSection({ props }: props) {
       <div className="flex group hover:rotate-6 relative z-10 transition transition-all ease-in-out duration-250">
         <Image
           unoptimized
-          src={"/images/profileImage1.png"}
+          src={`/${process.env.BASE_PATH}/images/profileImage1.png`}
           width={450}
           height={600}
           alt="profile image"
