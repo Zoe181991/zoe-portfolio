@@ -9,7 +9,6 @@ const nextConfig = {
   reactStrictMode: true,
   distDir: "dist",
   images: {
-    path: "",
     unoptimized: true,
 
     },
