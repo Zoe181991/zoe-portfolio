@@ -12,9 +12,9 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "about-bg-image": `url('${process.env.BASE_PATH}/images/clouds.jpg')`,
-        "body-bg-dots": `url('${process.env.BASE_PATH}/dot.svg')`,
-        "body-bg-shapes": `url('${process.env.BASE_PATH}/bgShapes.svg')`,
+        "about-bg-image": `url('zoe-portfolio/images/clouds.jpg')`,
+        "body-bg-dots": `url('zoe-portfolio/dot.svg')`,
+        "body-bg-shapes": `url('zoe-portfolio/bgShapes.svg')`,
       },
       colors: {
         "text-base-color": "rgb(var(--color-text-base-color) / <alpha-value>)",
