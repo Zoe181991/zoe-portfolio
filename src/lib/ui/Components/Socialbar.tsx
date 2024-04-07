@@ -15,6 +15,7 @@ export function Socialbar() {
             src={`${process.env.BASE_PATH}/svg/linkedinIcon.svg`}
             alt={""}
             width="24"
+            height="24"
             className="fill-base-2"
           />
         </a>
@@ -26,6 +27,7 @@ export function Socialbar() {
             src={`${process.env.BASE_PATH}/svg/githubIconColored.svg`}
             alt={""}
             width="24"
+            height="24"
           />
         </a>
       </li>
@@ -36,6 +38,7 @@ export function Socialbar() {
             src={`${process.env.BASE_PATH}/svg/mailIcon.svg`}
             alt={""}
             width={"24"}
+            height="24"
           />
         </a>
       </li>

@@ -12,8 +12,8 @@ interface props {
 }
 export function AboutSection({ props }: props) {
   return (
-    <div className=" flex flex-col items-center lg:items-start md:flex-row h-full gap-4 lg:gap-12 ">
-      <div className="flex flex-col h-full max-w-2xl">
+    <div className=" flex flex-col items-center lg:items-start lg:flex-row h-full gap-4 lg:gap-12 ">
+      <div className="flex lg:w-2/3 flex-col h-full max-w-2xl">
         <div className="text-6xl font-semibold">
           <span className={rubikScribble.className}> HEY!</span>
         </div>
@@ -59,7 +59,7 @@ export function AboutSection({ props }: props) {
         </div>
       </div>
 
-      <div className="flex group hover:rotate-6 relative z-10 transition transition-all ease-in-out duration-250">
+      <div className="flex lg:w-1/3  group hover:rotate-6 relative z-10 transition transition-all ease-in-out duration-250">
         <Image
           unoptimized
           src={`${process.env.BASE_PATH}/images/profileImage1.png`}

@@ -88,7 +88,7 @@ export function ImageGallery({ imagesURLS, projectName }: ImageGalleryProps) {
                       className="btn bg-opacity-0   hover:bg-white hover:bg-opacity-50 border-none "
                     >
                       <Image
-                        src={`${process.env.BASE_PATH}svg/arrowsMaximize.svg`}
+                        src={`${process.env.BASE_PATH}/svg/arrowsMaximize.svg`}
                         alt={"maximize"}
                         width={24}
                         height={24}
