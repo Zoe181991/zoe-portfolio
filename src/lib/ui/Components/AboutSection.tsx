@@ -20,6 +20,7 @@ export function AboutSection({ props }: props) {
         <div className=" inline-flex flex-col text-sm md:text-lg  gap-4 mt-10 mb-8 bg-base-3 bg-opacity-60 md:bg-opacity-80 rounded-md p-6 lg:p-10">
           <ul className="opacity-100 text-md lg:text-lg text-white space-y-3.5">
             <li> My name is Zoe Barkan and I’m a full-stack developer.</li>
+
             <li>
               I love coding, learning new technologies and finding the best way
               to combine them in my work.{" "}
