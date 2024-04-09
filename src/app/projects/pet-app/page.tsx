@@ -4,6 +4,7 @@ import { ImageGalleryPetAppContent } from "ui";
 import Link from "next/link";
 import React from "react";
 import petAppLogo from "../../../../public/images/projects/pet-app/logo.png";
+import arrowRight from "../../../../public/svg/arrowRight.svg";
 
 export default function Home() {
   return (
@@ -88,19 +89,52 @@ export default function Home() {
                   your wishlist. You can register and adopt or foster it for a
                   short period of time.{" "}
                 </p>
+
+                <div className=" bg-base-2 rounded-md  z-0 p-4 flex flex-col">
+                  <p className="mb-2">
+                    {" "}
+                    This was the final project of my studies at the ITC
+                    full-stack development bootcamp. The project had three main
+                    parts:
+                  </p>
+                  <ul className="space-y-3.5">
+                    <li>
+                      <Image
+                        src={arrowRight}
+                        alt={"menu"}
+                        width={24}
+                        height={24}
+                        style={{ display: "inline", marginRight: 10 }}
+                      />{" "}
+                      Building the front-end using ChakraUI and additional code
+                      - guest preview, user preview, and admin preview.
+                    </li>
+                    <li>
+                      <Image
+                        src={arrowRight}
+                        alt={"menu"}
+                        width={24}
+                        height={24}
+                        style={{ display: "inline", marginRight: 10 }}
+                      />{" "}
+                      Building the backend database using MongoDB.
+                    </li>
+                    <li>
+                      <Image
+                        src={arrowRight}
+                        alt={"menu"}
+                        width={24}
+                        height={24}
+                        style={{ display: "inline", marginRight: 10 }}
+                      />{" "}
+                      Deploying the app using Vercel.
+                    </li>
+                  </ul>
+                </div>
                 <p>
                   I had a great time putting this app together, I learned a lot
                   about the meaning of being a full-stack developer and crafting
                   the entire app end-to-end.{" "}
-                </p>
-
-                <p>
-                  This was the final project of my studies at the ITC full-stack
-                  development bootcamp. The project had three main parts:
-                  Building the front-end using ChakraUI and additional code -
-                  guest preview, user preview, and manager preview. Building the
-                  backend database using MongoDB. Deploying the app using
-                  Vercel.
                 </p>
               </div>
             </div>
