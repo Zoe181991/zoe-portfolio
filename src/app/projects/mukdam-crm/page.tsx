@@ -52,11 +52,6 @@ export default function Home() {
                 <p>
                   Mukdam is a service that enables you to monitor and manage
                   your pension information. The user registers the service via
-                  WhatsApp chat and subsequently receives a monthly report.
-                </p>
-                <p>
-                  Mukdam is a service that enables you to monitor and manage
-                  your pension information. The user registers the service via
                   WhatsApp chat and subsequently receives a monthly report .
                 </p>
                 <p>

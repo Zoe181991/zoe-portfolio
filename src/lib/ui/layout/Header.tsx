@@ -29,7 +29,7 @@ export function Header() {
       </div>
       <div className="-translate-x-2">
         <Image
-          src={`${process.env.BASE_PATH}/images/arrow.png`}
+          src={`/images/arrow.png`}
           alt={"arrow"}
           width={250}
           height={350}
