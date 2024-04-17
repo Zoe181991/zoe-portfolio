@@ -61,7 +61,7 @@ export function AboutSection({ props }: props) {
         </div>
       </div>
 
-      <div className="flex lg:w-1/3  group hover:rotate-6 relative z-10 transition transition-all ease-in-out duration-250">
+      <div className="flex lg:w-1/3  group transition transition-all ease-in-out duration-500 hover:rotate-6 relative z-10 ">
         <Image
           unoptimized
           src={`/images/profileImage1.jpg`}
@@ -69,8 +69,6 @@ export function AboutSection({ props }: props) {
           height={600}
           alt="profile image"
         />
-
-        <div className=" group-hover:w-[calc(100%+1.5rem)] group-hover:h-[calc(100%+1.5rem)] group-hover:rounded-sm group-hover:-bottom-5 group-hover:-left-5  group-hover:bg-gradient-to-r group-hover:from-base-2 group-hover:to-base-4 group-hover:absolute group-hover:-z-10 "></div>
       </div>
     </div>
   );
