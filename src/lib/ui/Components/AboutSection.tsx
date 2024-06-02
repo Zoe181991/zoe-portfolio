@@ -14,7 +14,7 @@ export function AboutSection({ props }: props) {
   return (
     <div className="w-full flex flex-col items-center lg:items-start lg:flex-row h-full gap-4 lg:gap-12 ">
       <div className="flex w-full lg:w-2/3 flex-col h-full max-w-2xl">
-        <div className="text-6xl font-semibold">
+        <div className="text-6xl mt-2 font-semibold flex justify-center md:justify-start ">
           <span className={rubikScribble.className}> HEY!</span>
         </div>
         <div className=" inline-flex flex-col text-sm md:text-lg  gap-4 mt-10 mb-8 bg-base-3 bg-opacity-60 md:bg-opacity-80 rounded-md p-6 lg:p-10">
@@ -36,15 +36,15 @@ export function AboutSection({ props }: props) {
           </ul>
         </div>
         <div className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-60 md:bg-opacity-80 rounded-md  p-6 lg:p-10">
-          <div className="flex text-4xl font-semibold mb-5 text-white">
+          <div className="flex justify-center md:justify-start text-4xl font-semibold mb-7 text-white">
             <span className={rubikScribble.className}> MY SKILLS</span>
           </div>
-          <div className="flex grid grid-cols-5 gap-y-4 lg:gap-4 w-full   ">
+          <div className="flex grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-y-4 lg:gap-4 w-full   ">
             {MySkills.map((skill, index) => {
               const skillIcon = SkillsIcons[skill as keyof typeof SkillsIcons];
               const url = `/svg/skills/${skillIcon}.svg`;
               return (
-                <div className="flex flex-col items-center">
+                <div key={index} className="flex flex-col items-center">
                   <Image
                     src={url}
                     alt={skill}
