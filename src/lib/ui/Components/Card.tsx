@@ -2,6 +2,10 @@
 import Image from "next/image";
 import { SkillsIcons } from "ui";
 import Link from "next/link";
+import { Varela_Round } from "next/font/google";
+import React from "react";
+
+const varela = Varela_Round({ subsets: [], weight: ["400"] });
 
 interface CardProps {
   title: string;
@@ -10,7 +14,9 @@ interface CardProps {
   link: string;
   skills?: string[];
   newWindow?: boolean;
+  rtl?: true;
 }
+
 export function Card({
   title,
   description,
@@ -18,6 +24,7 @@ export function Card({
   link,
   skills,
   newWindow,
+  rtl,
 }: CardProps) {
   return (
     <Link
@@ -36,13 +43,25 @@ export function Card({
             height={300}
           />
         </div>
-        <h3 className="group-hover:transition group-hover:translate-x-2 mt-0 px-2 text-white text-xl font-bold inline-block ">
-          {title}
+        <h3 className=" group-hover:transition group-hover:translate-x-2 mt-0 px-2 text-white text-xl font-bold inline-block ">
+          {rtl ? (
+            <span className={varela.className}>
+              {" "}
+              <div className="text-right">{title}</div>
+            </span>
+          ) : (
+            <>{title}</>
+          )}
         </h3>
         <div className="group-hover:transition group-hover:translate-x-2 z-10 py-2 px-2 flex flex-col  ">
-          <p>{description}</p>
+          {rtl ? (
+            <span className={varela.className}>
+              <div className="text-right">{description}</div>
+            </span>
+          ) : (
+            <p>{description}</p>
+          )}
         </div>
-
         <div className=" flex flex-row gap-4 px-2 mb-4 ">
           {skills &&
             skills.map((skill, index) => {
