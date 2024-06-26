@@ -1,9 +1,9 @@
 import { Footer, Header, Navbar, Section, Card, AboutSection } from "ui";
 import { WebsitesCards } from "ui";
-import { Varela_Round } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import React from "react";
 
-const varela = Varela_Round({ subsets: [], weight: ["400"] });
+const openSans = Open_Sans({ subsets: [], weight: ["400"] });
 
 export default function Home() {
   return (
@@ -11,24 +11,26 @@ export default function Home() {
       <Navbar />
       <main className="flex flex-col bg-body-bg-dots ">
         <div className="bg-body-bg-shapes scroll-smooth	">
-          <Header h1={"Websites"} h2={"examples"} />
+          <Header h1={"Zoe Barkan"} />
           <Section id="projects">
             <div className="flex mb-4 text-3xl font-bold text-base-4  ">
-              <span className={varela.className}>הפרויקטים שלי</span>
+              <span className={openSans.className}>הפרויקטים שלי</span>
             </div>
-            <div className="flex-col flex  lg:flex-row justify-between items-center gap-2 w-full ">
-              {WebsitesCards.map((card) => (
-                <Card
-                  key={card.id}
-                  title={card.title}
-                  description={card.description}
-                  image={card.image}
-                  link={card.link}
-                  skills={card.skills}
-                  newWindow={true}
-                  rtl={true}
-                />
-              ))}
+            <div className="">
+              <div className=" justify-items-center  grid-cols-1 lg:grid-cols-3 grid   gap-4 w-full ">
+                {WebsitesCards.map((card) => (
+                  <Card
+                    key={card.id}
+                    title={card.title}
+                    description={card.description}
+                    image={card.image}
+                    link={card.link}
+                    skills={card.skills}
+                    newWindow={true}
+                    rtl={true}
+                  />
+                ))}
+              </div>
             </div>
           </Section>
 

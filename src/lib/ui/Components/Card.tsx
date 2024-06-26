@@ -2,10 +2,10 @@
 import Image from "next/image";
 import { SkillsIcons } from "ui";
 import Link from "next/link";
-import { Varela_Round } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import React from "react";
 
-const varela = Varela_Round({ subsets: [], weight: ["400"] });
+const openSans = Open_Sans({ subsets: [], weight: ["400"] });
 
 interface CardProps {
   title: string;
@@ -45,7 +45,7 @@ export function Card({
         </div>
         <h3 className=" group-hover:transition group-hover:translate-x-2 mt-0 px-2 text-white text-xl font-bold inline-block ">
           {rtl ? (
-            <span className={varela.className}>
+            <span className={openSans.className}>
               {" "}
               <div className="text-right">{title}</div>
             </span>
@@ -55,7 +55,7 @@ export function Card({
         </h3>
         <div className="group-hover:transition group-hover:translate-x-2 z-10 py-2 px-2 flex flex-col  ">
           {rtl ? (
-            <span className={varela.className}>
+            <span className={openSans.className}>
               <div className="text-right">{description}</div>
             </span>
           ) : (

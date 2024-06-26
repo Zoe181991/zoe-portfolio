@@ -6,7 +6,7 @@ import Image from "next/image";
 
 interface headerProps {
   h1: string;
-  h2: string;
+  h2?: string;
 }
 
 export function Header({ h1, h2 }: headerProps) {
