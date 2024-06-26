@@ -4,7 +4,12 @@ import hover3d from "../../utils/hover";
 import { useRef } from "react";
 import Image from "next/image";
 
-export function Header() {
+interface headerProps {
+  h1: string;
+  h2?: string;
+}
+
+export function Header({ h1, h2 }: headerProps) {
   const headerRef = useRef<HTMLDivElement>(null);
 
   const borderHover = hover3d(headerRef, { x: 30, y: -40, z: 30 });
@@ -20,11 +25,11 @@ export function Header() {
         style={{ transform: borderHover.transform }}
       >
         <div className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-base-2 to-base-4">
-          Zoe Barkan
+          {h1}
         </div>
 
         <div className="text-lg md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-base-2 to-base-4">
-          fullstack developer
+          {h2}
         </div>
       </div>
       <div className="-translate-x-2">

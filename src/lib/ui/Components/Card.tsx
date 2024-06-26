@@ -2,6 +2,10 @@
 import Image from "next/image";
 import { SkillsIcons } from "ui";
 import Link from "next/link";
+import { Open_Sans } from "next/font/google";
+import React from "react";
+
+const openSans = Open_Sans({ subsets: [], weight: ["400"] });
 
 interface CardProps {
   title: string;
@@ -9,10 +13,25 @@ interface CardProps {
   description?: string;
   link: string;
   skills?: string[];
+  newWindow?: boolean;
+  rtl?: true;
 }
-export function Card({ title, description, image, link, skills }: CardProps) {
+
+export function Card({
+  title,
+  description,
+  image,
+  link,
+  skills,
+  newWindow,
+  rtl,
+}: CardProps) {
   return (
-    <Link href={link}>
+    <Link
+      href={link}
+      rel="noopener noreferrer"
+      target={newWindow ? "_blank" : ""}
+    >
       <div className="group w-80 h-96 relative flex flex-col justify-between bg-base-1 hover:cursor-pointer hover:bg-gradient-to-r hover:from-base-2 hover:to-base-4 hover:text-base-1 mt-10 hover:border-none   p-2 border-2 border-base-2 rounded-md transition transition-all ease-in-out duration-250 ">
         <div style={{ borderRadius: "4px" }}>
           <Image
@@ -24,13 +43,25 @@ export function Card({ title, description, image, link, skills }: CardProps) {
             height={300}
           />
         </div>
-        <h3 className="group-hover:transition group-hover:translate-x-2 mt-0 px-2 text-white text-xl font-bold inline-block ">
-          {title}
+        <h3 className=" group-hover:transition group-hover:translate-x-2 mt-0 px-2 text-white text-xl font-bold inline-block ">
+          {rtl ? (
+            <span className={openSans.className}>
+              {" "}
+              <div className="text-right">{title}</div>
+            </span>
+          ) : (
+            <>{title}</>
+          )}
         </h3>
         <div className="group-hover:transition group-hover:translate-x-2 z-10 py-2 px-2 flex flex-col  ">
-          <p>{description}</p>
+          {rtl ? (
+            <span className={openSans.className}>
+              <div className="text-right">{description}</div>
+            </span>
+          ) : (
+            <p>{description}</p>
+          )}
         </div>
-
         <div className=" flex flex-row gap-4 px-2 mb-4 ">
           {skills &&
             skills.map((skill, index) => {
