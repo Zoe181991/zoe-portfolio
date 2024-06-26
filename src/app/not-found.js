@@ -1,8 +1,5 @@
 import React from "react";
-import { Footer, Header, Navbar, Section } from "../lib/ui";
-import Image from "next/image";
-import petAppLogo from "../../public/images/projects/pet-app/logo.png";
-
+import { Footer, Header, Navbar } from "../lib/ui";
 function NotFound(props) {
   return (
     <div>

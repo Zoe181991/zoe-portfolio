@@ -8,11 +8,10 @@ const openSans = Open_Sans({ subsets: [], weight: ["400"] });
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main className="flex flex-col bg-body-bg-dots ">
         <div className="bg-body-bg-shapes scroll-smooth	">
           <Header h1={"Zoe Barkan"} />
-          <Section id="projects">
+          <Section id="websites">
             <div className="flex mb-4 text-3xl font-bold text-base-4  ">
               <span className={openSans.className}>הפרויקטים שלי</span>
             </div>
