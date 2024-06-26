@@ -9,10 +9,22 @@ interface CardProps {
   description?: string;
   link: string;
   skills?: string[];
+  newWindow?: boolean;
 }
-export function Card({ title, description, image, link, skills }: CardProps) {
+export function Card({
+  title,
+  description,
+  image,
+  link,
+  skills,
+  newWindow,
+}: CardProps) {
   return (
-    <Link href={link}>
+    <Link
+      href={link}
+      rel="noopener noreferrer"
+      target={newWindow ? "_blank" : ""}
+    >
       <div className="group w-80 h-96 relative flex flex-col justify-between bg-base-1 hover:cursor-pointer hover:bg-gradient-to-r hover:from-base-2 hover:to-base-4 hover:text-base-1 mt-10 hover:border-none   p-2 border-2 border-base-2 rounded-md transition transition-all ease-in-out duration-250 ">
         <div style={{ borderRadius: "4px" }}>
           <Image
