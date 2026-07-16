@@ -2,44 +2,51 @@
 
 import hover3d from "../../utils/hover";
 import { useRef } from "react";
-import Image from "next/image";
+import { Reveal } from "../Components/Reveal";
 
 interface headerProps {
   h1: string;
   h2?: string;
+  badges?: string[];
 }
 
-export function Header({ h1, h2 }: headerProps) {
+export function Header({ h1, h2, badges }: headerProps) {
   const headerRef = useRef<HTMLDivElement>(null);
 
-  const borderHover = hover3d(headerRef, { x: 30, y: -40, z: 30 });
-  const imageHover = hover3d(headerRef, { x: 20, y: -5, z: 11 });
+  const contentHover = hover3d(headerRef, { x: 15, y: -20, z: 15 });
 
   return (
-    <div
-      className="flex flex-col w-full justify-center items-center pt-8 px-6"
-      ref={headerRef}
-    >
-      <div
-        className="mb-8 p-1 border border-base-4 border-4 rounded-md h-72 w-4/5 sm:w-3/4 md:w-3/5 flex flex-col gap-4 justify-center items-center "
-        style={{ transform: borderHover.transform }}
-      >
-        <div className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-base-2 to-base-4">
-          {h1}
-        </div>
+    <div className="flex flex-col w-full justify-center items-center pt-16 pb-8 px-6">
+      <Reveal className="flex flex-col items-center">
+        <div
+          className="flex flex-col gap-5 justify-center items-center max-w-3xl"
+          ref={headerRef}
+          style={{ transform: contentHover.transform }}
+        >
+          <div className="font-heading text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-base-2 to-base-4">
+            {h1}
+          </div>
 
-        <div className="text-lg md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-base-2 to-base-4">
-          {h2}
+          {h2 && (
+            <div className="text-lg md:text-2xl text-center text-base-4 text-opacity-80">
+              {h2}
+            </div>
+          )}
+
+          {badges && badges.length > 0 && (
+            <div className="flex flex-wrap justify-center gap-2 mt-2">
+              {badges.map((badge, index) => (
+                <span
+                  key={index}
+                  className="text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-base-2 border-opacity-30 text-base-2"
+                >
+                  {badge}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
-      </div>
-      <div className="-translate-x-2">
-        <Image
-          src={`/images/arrow.png`}
-          alt={"arrow"}
-          width={250}
-          height={350}
-        />
-      </div>
+      </Reveal>
     </div>
   );
 }

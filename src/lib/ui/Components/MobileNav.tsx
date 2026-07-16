@@ -1,28 +1,25 @@
 "use client";
 
+import { LanguageToggle } from "./LanguageToggle";
+import { WhatsAppCTA } from "./WhatsAppCTA";
+import { content } from "../text/content";
+import { useLanguage } from "../context/LanguageContext";
+
 export function MobileNav() {
+  const { language } = useLanguage();
   return (
-    <div className="flex  flex-col  items-center text-center w-full border-b-2 border-white ">
-      <div className="py-2 w-full text-[#f98d55] hover:bg-[#f98d55]  hover:text-base-1 font-semibold hover:cursor-pointer hover:scale-125  transition ease-in-out duration-200">
-        <a href={`/#aboutMe`}>about</a>
+    <div className="flex flex-col items-center text-center w-full">
+      <div className="py-3 border-b border-base-4 border-opacity-10 w-full flex justify-center">
+        <LanguageToggle />
       </div>
-      <div className="py-2 w-full text-[#c974a3] hover:bg-[#c974a3]  hover:text-base-1 font-semibold  hover:scale-125 hover:cursor-pointer  transition ease-in-out duration-300">
-        <a
-          href="https://www.linkedin.com/in/zoe-barkan-a1aa17252/"
-          target="_blank"
-        >
-          linkedin
-        </a>
+      <div className="py-3 w-full rounded-xl text-base-4 hover:bg-[#EE81F1] hover:text-base-1 font-semibold hover:cursor-pointer transition ease-in-out duration-200">
+        <a href="#aboutMe">{content[language].nav.about}</a>
       </div>
-      <div className="py-2 w-full font-semibold text-base-2 hover:bg-base-2  hover:text-base-1 hover:cursor-pointer hover:scale-125  transition ease-in-out duration-200">
-        <a href="https://github.com/Zoe181991" target="_blank">
-          github
-        </a>
+      <div className="py-3 w-full rounded-xl text-base-4 hover:bg-[#EE81F1] hover:text-base-1 font-semibold hover:cursor-pointer transition ease-in-out duration-200">
+        <a href="#projects">{content[language].nav.portfolio}</a>
       </div>
-      <div className="py-2 w-full text-base-4 hover:bg-base-4  hover:text-base-1 font-semibold hover:cursor-pointer hover:scale-125  transition ease-in-out duration-200">
-        <a href="mailto:zoebarkan@gmail.com" target="_blank">
-          email
-        </a>
+      <div className="py-3 mt-1">
+        <WhatsAppCTA label={content[language].nav.cta} />
       </div>
     </div>
   );

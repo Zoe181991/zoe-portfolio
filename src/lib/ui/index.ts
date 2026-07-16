@@ -4,17 +4,13 @@ export { Navbar } from "./layout/Navbar";
 export { Section } from "./layout/Section";
 export { Card } from "./Components/Card";
 export { MobileNav } from "./Components/MobileNav";
-export { Socialbar } from "./Components/Socialbar";
-export { CardContent } from "./text/CardContent";
+export { NavLinks } from "./Components/NavLinks";
+export { LanguageToggle } from "./Components/LanguageToggle";
+export { WhatsAppCTA } from "./Components/WhatsAppCTA";
+export { Reveal } from "./Components/Reveal";
 export { WebsitesCards } from "./text/WebsitesCards";
-
-export {
-  ImageGalleryMukdamCrmContent,
-  ImageGalleryPetAppContent,
-  ImageGalleryMukdamInspectionContent,
-} from "./text/ImageGallery";
-
-export { SkillsIcons } from "./text/skillsIcons";
-export { HeadLine } from "./Components/HeadLine";
+export { content } from "./text/content";
 export { AboutSection } from "./Components/AboutSection";
-export { ImageGallery } from "./Components/ImageGallery";
+export { WhoItsFor } from "./Components/WhoItsFor";
+export { Process } from "./Components/Process";
+export { LanguageProvider, useLanguage } from "./context/LanguageContext";

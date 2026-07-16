@@ -3,22 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --color-border-base-color:0, 0, 0;
-  --color-text-base-color:0, 0, 0;
-  --color-base-1: 0 0 0;
-  --color-base-2: 165 140 249;
-  --color-base-3: 83 126 149;
-  --color-base-4: 150 245 233;
-  --color-base-5: 48  8 110;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 38, 39, 40;
+  --color-border-base-color: 38, 39, 40;
+  --color-text-base-color: 38, 39, 40;
+  --color-base-1: 251 233 215;
+  --color-base-2: 88 9 82;
+  --color-base-3: 246 213 247;
+  --color-base-4: 38 39 40;
+  --color-base-5: 88 9 82;
 }
 
 body {
@@ -29,12 +21,65 @@ body {
       rgb(var(--color-base-1))
     )
     rgb(var(--color-base-1));
+  font-family: var(--font-open-sans), sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@font-face {
+  font-family: "SimpleCLM";
+  src: url("/fonts/simpleclm/simpleclm-bold-webfont.woff") format("woff"),
+    url("/fonts/simpleclm/simpleclm-bold-webfont.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SimpleCLM";
+  src: url("/fonts/simpleclm/simpleclm-medium-webfont.woff") format("woff"),
+    url("/fonts/simpleclm/simpleclm-medium-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-heading {
+  font-family: "SimpleCLM", var(--font-open-sans), sans-serif;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #ee81f1, #fd8928);
+  border-radius: 10px;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #9d1096, #eb6806);
 }
 
 
