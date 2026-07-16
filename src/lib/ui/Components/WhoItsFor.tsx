@@ -34,7 +34,7 @@ export function WhoItsFor() {
       <Reveal delay={240} className="mt-12">
         <a
           href="#projects"
-          className="btn-gradient inline-flex text-sm md:text-base font-semibold text-base-1 px-7 py-3"
+          className="btn-gradient btn-lift inline-flex text-sm md:text-base font-semibold text-base-1 px-7 py-3"
         >
           {cta}
         </a>

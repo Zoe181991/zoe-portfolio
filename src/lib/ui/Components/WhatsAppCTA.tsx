@@ -8,7 +8,7 @@ interface WhatsAppCTAProps {
 }
 
 const baseClasses =
-  "btn-gradient inline-flex items-center gap-2 text-sm font-semibold text-base-1 px-6 py-3";
+  "btn-gradient btn-lift inline-flex items-center gap-2 text-sm font-semibold text-base-1 px-6 py-3";
 
 export function WhatsAppCTA({ label, className }: WhatsAppCTAProps) {
   return (

@@ -26,7 +26,7 @@ export function Navbar() {
           <LanguageToggle />
           <WhatsAppCTA
             label={content[language].nav.cta}
-            className="btn-gradient inline-flex items-center gap-2 text-sm font-semibold text-base-1 px-5 py-2"
+            className="btn-gradient btn-lift inline-flex items-center gap-2 text-sm font-semibold text-base-1 px-5 py-2"
           />
         </div>
 
