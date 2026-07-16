@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { LanguageProvider } from "@/lib/ui/context/LanguageContext";
 
-const inter = Inter({ subsets: ["latin"] });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600"],
+const openSans = Open_Sans({
+  subsets: ["hebrew", "latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-open-sans",
 });
 
-
 export const metadata: Metadata = {
-  title: "Zoe Barkan",
-  description: "full stack developer",
+  title: "Zoe Barkan | Website & Landing Page Design",
+  description:
+    "Wix websites and landing pages designed by Zoe Barkan for businesses, therapists, entrepreneurs and nonprofits.",
 };
 
 export default function RootLayout({
@@ -21,11 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="he" dir="rtl">
       <head>
         <link rel="icon" href="/faviconZoe.png" sizes="any" />
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={openSans.variable}>
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }

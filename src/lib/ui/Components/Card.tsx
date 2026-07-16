@@ -1,84 +1,61 @@
 "use client";
 import Image from "next/image";
-import { SkillsIcons } from "ui";
 import Link from "next/link";
-import { Open_Sans } from "next/font/google";
 import React from "react";
-
-const openSans = Open_Sans({ subsets: [], weight: ["400"] });
+import { useLanguage } from "../context/LanguageContext";
+import { content } from "../text/content";
 
 interface CardProps {
-  title: string;
+  title: { he: string; en: string };
   image: string;
-  description?: string;
+  description?: { he: string; en: string };
   link: string;
-  skills?: string[];
   newWindow?: boolean;
-  rtl?: true;
 }
 
-export function Card({
-  title,
-  description,
-  image,
-  link,
-  skills,
-  newWindow,
-  rtl,
-}: CardProps) {
+export function Card({ title, description, image, link, newWindow }: CardProps) {
+  const { language } = useLanguage();
+  const isHebrew = language === "he";
+
   return (
     <Link
       href={link}
       rel="noopener noreferrer"
       target={newWindow ? "_blank" : ""}
+      className="group block w-full aspect-square rounded-2xl bg-white border border-base-4 border-opacity-10 shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
     >
-      <div className="group w-80 h-96 relative flex flex-col justify-between bg-base-1 hover:cursor-pointer hover:bg-gradient-to-r hover:from-base-2 hover:to-base-4 hover:text-base-1 mt-10 hover:border-none   p-2 border-2 border-base-2 rounded-md transition transition-all ease-in-out duration-250 ">
-        <div style={{ borderRadius: "4px" }}>
+      <div className="flex h-full flex-col">
+        <div className="relative h-1/2 w-full shrink-0">
           <Image
-            layout="responsive"
             unoptimized
+            fill
             src={image}
-            alt={title}
-            width={300}
-            height={300}
+            alt={title[language]}
+            style={{ objectFit: "cover" }}
           />
         </div>
-        <h3 className=" group-hover:transition group-hover:translate-x-2 mt-0 px-2 text-white text-xl font-bold inline-block ">
-          {rtl ? (
-            <span className={openSans.className}>
-              {" "}
-              <div className="text-right">{title}</div>
-            </span>
-          ) : (
-            <>{title}</>
+
+        <div
+          className={`flex-1 min-h-0 flex flex-col gap-2 p-5 pb-4 overflow-hidden ${
+            isHebrew ? "text-right" : "text-left"
+          }`}
+        >
+          <h3 className="text-xl md:text-2xl font-extrabold text-base-4 leading-tight">
+            {title[language]}
+          </h3>
+          {description && (
+            <p className="text-sm text-base-4 text-opacity-70 line-clamp-2">
+              {description[language]}
+            </p>
           )}
-        </h3>
-        <div className="group-hover:transition group-hover:translate-x-2 z-10 py-2 px-2 flex flex-col  ">
-          {rtl ? (
-            <span className={openSans.className}>
-              <div className="text-right">{description}</div>
-            </span>
-          ) : (
-            <p>{description}</p>
-          )}
+          <span
+            className={`btn-gradient inline-flex w-fit items-center gap-1.5 text-base-1 text-xs md:text-sm font-semibold px-4 py-2 mt-auto ${
+              isHebrew ? "self-end" : "self-start"
+            }`}
+          >
+            {content[language].projects.visitSite}
+          </span>
         </div>
-        <div className=" flex flex-row gap-4 px-2 mb-4 ">
-          {skills &&
-            skills.map((skill, index) => {
-              const skillIcon = SkillsIcons[skill as keyof typeof SkillsIcons];
-              const url = `/svg/skills/${skillIcon}.svg`;
-              return (
-                <Image
-                  src={url}
-                  alt={skill}
-                  width={30}
-                  height={30}
-                  key={index}
-                />
-              );
-            })}{" "}
-        </div>
-        <div className="group-hover:hidden w-[calc(100%+1rem)] rounded-md h-full  bg-gradient-to-r from-base-2 to-base-4 absolute -z-10 -bottom-3 -left-3  border-b-base-2 border-b-2"></div>
       </div>
     </Link>
   );
