@@ -15,14 +15,13 @@ interface CardProps {
 
 export function Card({ title, description, image, link, newWindow }: CardProps) {
   const { language } = useLanguage();
-  const isHebrew = language === "he";
 
   return (
     <Link
       href={link}
       rel="noopener noreferrer"
       target={newWindow ? "_blank" : ""}
-      className="group block w-full aspect-square rounded-2xl bg-white border border-base-4 border-opacity-10 shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+      className="group block w-full aspect-square rounded-2xl bg-white bg-opacity-90 border border-base-4 border-opacity-10 shadow-sm hover:shadow-lg hover:scale-90 transition-all duration-300 overflow-hidden"
     >
       <div className="flex h-full flex-col">
         <div className="relative h-1/2 w-full shrink-0">
@@ -35,12 +34,8 @@ export function Card({ title, description, image, link, newWindow }: CardProps) 
           />
         </div>
 
-        <div
-          className={`flex-1 min-h-0 flex flex-col gap-2 p-5 pb-4 overflow-hidden ${
-            isHebrew ? "text-right" : "text-left"
-          }`}
-        >
-          <h3 className="text-xl md:text-2xl font-extrabold text-base-4 leading-tight">
+        <div className="flex-1 min-h-0 flex flex-col items-center gap-2 p-5 pb-[10px] overflow-hidden text-center">
+          <h3 className="text-xl md:text-2xl font-extrabold text-base-4 leading-tight line-clamp-2">
             {title[language]}
           </h3>
           {description && (
@@ -48,11 +43,7 @@ export function Card({ title, description, image, link, newWindow }: CardProps) 
               {description[language]}
             </p>
           )}
-          <span
-            className={`btn-gradient inline-flex w-fit items-center gap-1.5 text-base-1 text-xs md:text-sm font-semibold px-4 py-2 mt-auto ${
-              isHebrew ? "self-end" : "self-start"
-            }`}
-          >
+          <span className="btn-gradient inline-flex w-fit items-center gap-1.5 text-base-1 text-xs md:text-sm font-semibold px-4 py-2 mt-auto">
             {content[language].projects.visitSite}
           </span>
         </div>

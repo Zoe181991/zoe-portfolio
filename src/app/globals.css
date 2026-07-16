@@ -33,8 +33,8 @@ body {
 .reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-visible {
@@ -51,25 +51,15 @@ body {
 }
 
 @font-face {
-  font-family: "SimpleCLM";
-  src: url("/fonts/simpleclm/simpleclm-bold-webfont.woff") format("woff"),
-    url("/fonts/simpleclm/simpleclm-bold-webfont.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "SimpleCLM";
-  src: url("/fonts/simpleclm/simpleclm-medium-webfont.woff") format("woff"),
-    url("/fonts/simpleclm/simpleclm-medium-webfont.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "SecularOne";
+  src: url("/fonts/secular-one/SecularOne-Regular.ttf") format("truetype");
+  font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 
 .font-heading {
-  font-family: "SimpleCLM", var(--font-open-sans), sans-serif;
+  font-family: "SecularOne", var(--font-open-sans), sans-serif;
 }
 
 .btn-gradient {
@@ -80,6 +70,26 @@ body {
 
 .btn-gradient:hover {
   background: linear-gradient(135deg, #9d1096, #eb6806);
+}
+
+.btn-lift {
+  transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.btn-lift:hover {
+  transform: translateY(-10px);
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-inline-start: 2px;
+  animation: typing-blink 1s step-start infinite;
+}
+
+@keyframes typing-blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 

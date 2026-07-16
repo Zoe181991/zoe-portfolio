@@ -39,7 +39,6 @@ export interface SiteContent {
     sectionTitle: string;
     intro: string;
     steps: ProcessStep[];
-    cta: string;
   };
   footer: {
     heading: string;
@@ -90,7 +89,7 @@ export const content: Record<"he" | "en", SiteContent> = {
       visitSite: "לצפייה באתר",
     },
     about: {
-      heading: "היי!",
+      heading: "נעים להכיר",
       bio: [
         "אני זואי ברקן, אמא וגרה בחוף הכרמל.",
         "אני מעצבת ומפתחת אתרים, ומגיעה עם רקע של מתכנתת Full Stack, עורכת תוכן ויזמית חברתית. ביומיום, אני עוזרת לעצמאיים שצריכים עמוד נחיתה מדויק שיעבוד וימכור עבורם, ולעמותות שרוצות להנגיש את התוכניות שלהן למי שבאמת צריך אותן.",
@@ -104,11 +103,10 @@ export const content: Record<"he" | "en", SiteContent> = {
         "עיצוב אתרים ב-Wix",
         "עיצוב אתרים ב-WordPress",
         "עמודי נחיתה",
-        "UX/UI",
-        "מיתוג דיגיטלי",
         "כתיבת תוכן לאתרים",
-        "אופטימיזציה למובייל",
-        "נגישות דיגיטלית",
+        "עיצוב רספונסיבי",
+        "עיצוב Canva",
+        "עריכת וידאו",
       ],
     },
     process: {
@@ -135,7 +133,6 @@ export const content: Record<"he" | "en", SiteContent> = {
             "מדייקות יחד עד שהכל בדיוק כמו שרציתם — ועולים לאוויר.",
         },
       ],
-      cta: "בואו נדבר",
     },
     footer: {
       heading: "בואו נדבר",
@@ -184,7 +181,7 @@ export const content: Record<"he" | "en", SiteContent> = {
       visitSite: "Visit site",
     },
     about: {
-      heading: "HEY!",
+      heading: "Nice to meet you",
       bio: [
         "I'm Zoe Barkan, a mom living on the Carmel coast.",
         "I design and build websites, coming from a background as a full-stack developer, content editor and social entrepreneur. Day to day, I help freelancers who need a precise landing page that actually works and sells for them, and nonprofits who want to make their programs accessible to the people who truly need them.",
@@ -198,11 +195,10 @@ export const content: Record<"he" | "en", SiteContent> = {
         "Wix Website Design",
         "WordPress Website Design",
         "Landing Pages",
-        "UX/UI",
-        "Digital Branding",
         "Web Copywriting",
-        "Mobile Optimization",
-        "Digital Accessibility",
+        "Responsive Design",
+        "Canva Design",
+        "Video Editing",
       ],
     },
     process: {
@@ -228,7 +224,6 @@ export const content: Record<"he" | "en", SiteContent> = {
           description: "We fine-tune until it's exactly what you wanted — then launch.",
         },
       ],
-      cta: "Let's talk",
     },
     footer: {
       heading: "Let's talk",

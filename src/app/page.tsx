@@ -33,7 +33,7 @@ export default function Home() {
           </Section>
 
           <Section id="projects">
-            <Reveal className="font-heading flex mb-4 text-3xl font-bold text-base-4">
+            <Reveal className="font-heading flex mb-10 text-3xl font-bold text-base-4">
               {content[language].projects.sectionTitle}
             </Reveal>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">

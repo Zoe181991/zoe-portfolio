@@ -1,12 +1,11 @@
 "use client";
 import { content } from "../text/content";
 import { useLanguage } from "../context/LanguageContext";
-import { WhatsAppCTA } from "./WhatsAppCTA";
 import { Reveal } from "./Reveal";
 
 export function Process() {
   const { language } = useLanguage();
-  const { sectionTitle, intro, steps, cta } = content[language].process;
+  const { sectionTitle, intro, steps } = content[language].process;
   const isHebrew = language === "he";
 
   return (
@@ -19,29 +18,23 @@ export function Process() {
       </Reveal>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-5xl">
         {steps.map((step, index) => (
-          <Reveal
-            key={index}
-            delay={index * 120}
-            className={`flex flex-col gap-2 rounded-2xl bg-base-5 bg-opacity-90 p-6 ${
-              isHebrew ? "text-right" : "text-left"
-            }`}
-          >
-            <span className="text-sm font-bold text-base-3">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-            <h3 className="text-lg font-bold text-white">{step.title}</h3>
-            <p className="text-sm text-white text-opacity-80">
-              {step.description}
-            </p>
+          <Reveal key={index} delay={index * 150} duration={1500} className="h-full">
+            <div
+              className={`flex flex-col gap-2 rounded-2xl bg-base-5 bg-opacity-90 p-6 h-full shadow-sm hover:shadow-lg hover:scale-90 transition-all duration-300 ${
+                isHebrew ? "text-right" : "text-left"
+              }`}
+            >
+              <span className="text-sm font-bold text-base-3">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3 className="text-lg font-bold text-white">{step.title}</h3>
+              <p className="text-sm text-white text-opacity-80">
+                {step.description}
+              </p>
+            </div>
           </Reveal>
         ))}
       </div>
-      <Reveal delay={480}>
-        <WhatsAppCTA
-          label={cta}
-          className="btn-gradient mt-10 inline-flex items-center gap-2 text-sm md:text-base font-semibold text-base-1 px-7 py-3"
-        />
-      </Reveal>
     </div>
   );
 }
