@@ -28,7 +28,7 @@ export function Footer() {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-3xl mb-10">
         <Reveal className={`flex flex-col items-start gap-4 ${isHebrew ? "text-right" : "text-left"}`}>
-          <h2 className="font-heading text-2xl font-bold text-base-4">{heading}</h2>
+          <h2 className="font-heading text-3xl font-bold text-base-4">{heading}</h2>
           <a href="https://wa.me/972509181991" target="_blank" rel="noopener noreferrer" className={rowClass}>
             <Image src={whatsappIcon} alt="" width={22} height={22} />
             <span className="text-base-4">{whatsapp}</span>
@@ -44,7 +44,7 @@ export function Footer() {
         </Reveal>
 
         <Reveal delay={120} className={`flex flex-col items-start gap-4 ${isHebrew ? "text-right" : "text-left"}`}>
-          <h2 className="font-heading text-2xl font-bold text-base-4">{moreLinksHeading}</h2>
+          <h2 className="font-heading text-3xl font-bold text-base-4">{moreLinksHeading}</h2>
           <div className={`flex flex-row gap-4 ${isHebrew ? "justify-end" : "justify-start"}`}>
             <a href="https://www.linkedin.com/in/zoe-barkan-a1aa17252/" target="_blank" rel="noopener noreferrer">
               <Image src={linkedinIcon} alt="LinkedIn" width={22} height={22} />

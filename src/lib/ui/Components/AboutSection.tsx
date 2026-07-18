@@ -5,6 +5,17 @@ import { content } from "../text/content";
 import { useLanguage } from "../context/LanguageContext";
 import { WhatsAppCTA } from "./WhatsAppCTA";
 import { Reveal } from "./Reveal";
+import { SkillIcon, SkillIconKey } from "./SkillIcon";
+
+const skillIconKeys: SkillIconKey[] = [
+  "wix",
+  "wordpress",
+  "flag",
+  "pen",
+  "devices",
+  "canva",
+  "video",
+];
 
 export function AboutSection() {
   const { language } = useLanguage();
@@ -15,12 +26,12 @@ export function AboutSection() {
   return (
     <div className="w-full flex flex-col items-center lg:items-start lg:flex-row h-full gap-4 lg:gap-12 ">
       <div className="flex w-full lg:w-2/3 flex-col h-full max-w-2xl">
-        <Reveal className="font-heading text-6xl mt-2 font-bold flex justify-center md:justify-start">
+        <Reveal className="font-heading text-3xl mt-2 font-bold flex justify-center md:justify-start">
           {heading}
         </Reveal>
         <Reveal
           delay={100}
-          className={`inline-flex flex-col text-sm md:text-lg  gap-4 mt-10 mb-8 bg-base-3 bg-opacity-90 rounded-md p-6 lg:p-10 ${
+          className={`inline-flex flex-col text-sm md:text-lg  gap-4 mt-10 mb-8 bg-white bg-opacity-90 rounded-2xl p-6 lg:p-10 ${
             isHebrew ? "text-right" : "text-left"
           }`}
         >
@@ -36,17 +47,18 @@ export function AboutSection() {
         </Reveal>
         <Reveal
           delay={200}
-          className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-60 md:bg-opacity-80 rounded-md  p-6 lg:p-10"
+          className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-90 rounded-2xl p-6 lg:p-10"
         >
-          <div className="font-heading flex justify-center md:justify-start text-4xl font-bold mb-7 text-white">
+          <div className="font-heading flex justify-center md:justify-start text-3xl font-bold mb-7 text-white">
             {skillsHeading}
           </div>
           <div className="flex flex-wrap gap-3 w-full">
             {skills.map((skill, index) => (
               <span
                 key={index}
-                className="text-base-4 text-xs md:text-sm px-4 py-2 rounded-full border border-base-1 bg-base-1 bg-opacity-90"
+                className="inline-flex items-center gap-2 text-base-4 text-xs md:text-sm px-4 py-2 rounded-full border border-base-1 bg-base-1 bg-opacity-90"
               >
+                {skillIconKeys[index] && <SkillIcon name={skillIconKeys[index]} />}
                 {skill}
               </span>
             ))}

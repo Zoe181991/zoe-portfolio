@@ -6,7 +6,7 @@
   --foreground-rgb: 38, 39, 40;
   --color-border-base-color: 38, 39, 40;
   --color-text-base-color: 38, 39, 40;
-  --color-base-1: 251 233 215;
+  --color-base-1: 246 246 246;
   --color-base-2: 88 9 82;
   --color-base-3: 246 213 247;
   --color-base-4: 38 39 40;
@@ -58,8 +58,36 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Bespoke Stencil";
+  src: url("/fonts/bespoke-stencil/BespokeStencil-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bespoke Stencil";
+  src: url("/fonts/bespoke-stencil/BespokeStencil-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bespoke Stencil";
+  src: url("/fonts/bespoke-stencil/BespokeStencil-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 .font-heading {
   font-family: "SecularOne", var(--font-open-sans), sans-serif;
+}
+
+html[dir="ltr"] .font-heading {
+  font-family: "Bespoke Stencil", var(--font-open-sans), sans-serif;
 }
 
 .btn-gradient {

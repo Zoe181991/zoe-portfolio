@@ -59,4 +59,134 @@ export const WebsitesCards: WebsiteCardProps[] = [
     image: `/images/projects/websites/amen.png`,
     link: "https://www.ohela.org",
   },
+  {
+    id: 5,
+    title: {
+      he: "נמרוד קינן",
+      en: "Nimrod Keinan",
+    },
+    description: {
+      he: "אתר",
+      en: "Website",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.nimrodkeinan.com/",
+  },
+  {
+    id: 6,
+    title: {
+      he: "יובל תמרקין",
+      en: "Yuval Tamarkin",
+    },
+    description: {
+      he: "אתר",
+      en: "Website",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.yuvaltamarkin.com/",
+  },
+  {
+    id: 7,
+    title: {
+      he: "ירדן לוין - קן להפרד",
+      en: "Yarden Levin - A Nest for Parting",
+    },
+    description: {
+      he: "עמוד נחיתה",
+      en: "Landing page",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.yardenelevin.com/",
+  },
+  {
+    id: 8,
+    title: {
+      he: "בית הספר לשירים",
+      en: "The School of Songs",
+    },
+    description: {
+      he: "אתר",
+      en: "Website",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.songs-school.com/",
+  },
+  {
+    id: 9,
+    title: {
+      he: "גשרים להחלמה",
+      en: "Bridges to Recovery",
+    },
+    description: {
+      he: "עמוד נחיתה",
+      en: "Landing page",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.kfarsarah.com/c-2",
+  },
+  {
+    id: 10,
+    title: {
+      he: "ריטריט פציעה מוסרית",
+      en: "Moral Injury Retreat",
+    },
+    description: {
+      he: "עמוד נחיתה",
+      en: "Landing page",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.kfarsarah.com/moral",
+  },
+  {
+    id: 11,
+    title: {
+      he: "קבוצת הורים לחיילים בסדיר",
+      en: "Support Group for Parents of Active-Duty Soldiers",
+    },
+    description: {
+      he: "עמוד נחיתה",
+      en: "Landing page",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.kfarsarah.com/%D7%A7%D7%91%D7%95%D7%A6%D7%AA-%D7%94%D7%95%D7%A8%D7%99%D7%9D",
+  },
+  {
+    id: 12,
+    title: {
+      he: "סטודיו נחמה",
+      en: "Studio Nechama",
+    },
+    description: {
+      he: "עמוד נחיתה",
+      en: "Landing page",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.danaelmalach.com/studio",
+  },
+  {
+    id: 13,
+    title: {
+      he: "גיא רודוביץ",
+      en: "Guy Rodovich",
+    },
+    description: {
+      he: "אתר",
+      en: "Website",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://guyrodovich.wixsite.com/guy-rodovich",
+  },
+  {
+    id: 14,
+    title: {
+      he: "רוני מדליון היימן",
+      en: "Roni Medalion Hyman",
+    },
+    description: {
+      he: "תרפיסטית במוזיקה",
+      en: "Music Therapist",
+    },
+    image: `/images/projects/websites/placeholder.svg`,
+    link: "https://www.ronimedalionhyman.com/",
+  },
 ];
