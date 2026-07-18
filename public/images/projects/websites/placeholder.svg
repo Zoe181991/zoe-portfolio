@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#580952"/>
+  <circle cx="300" cy="240" r="70" fill="#F6D5F7" fill-opacity="0.25"/>
+  <path d="M180 420c0-66 54-120 120-120s120 54 120 120" stroke="#F6D5F7" stroke-opacity="0.35" stroke-width="10" fill="none"/>
+  <text x="300" y="500" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#FBE9D7" fill-opacity="0.85">תמונה בקרוב</text>
+</svg>

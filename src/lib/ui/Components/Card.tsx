@@ -24,14 +24,24 @@ export function Card({ title, description, image, link, newWindow }: CardProps) 
       className="group block w-full aspect-square rounded-2xl bg-white bg-opacity-90 border border-base-4 border-opacity-10 shadow-sm hover:shadow-lg hover:scale-90 transition-all duration-300 overflow-hidden"
     >
       <div className="flex h-full flex-col">
-        <div className="relative h-1/2 w-full shrink-0">
-          <Image
-            unoptimized
-            fill
-            src={image}
-            alt={title[language]}
-            style={{ objectFit: "cover" }}
-          />
+        <div className="flex flex-col h-1/2 w-full shrink-0 overflow-hidden">
+          <div
+            className="flex items-center gap-1.5 px-3 py-2 bg-base-4 bg-opacity-90 shrink-0"
+            style={{ direction: "ltr" }}
+          >
+            <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
+          </div>
+          <div className="relative flex-1 w-full">
+            <Image
+              unoptimized
+              fill
+              src={image}
+              alt={title[language]}
+              style={{ objectFit: "cover" }}
+            />
+          </div>
         </div>
 
         <div className="flex-1 min-h-0 flex flex-col items-center gap-2 p-5 pb-[10px] overflow-hidden text-center">

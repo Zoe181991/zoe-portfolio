@@ -4,13 +4,13 @@ import {
   Header,
   Navbar,
   Section,
-  Card,
   AboutSection,
   WhoItsFor,
+  ValueProp,
+  ProjectsGrid,
   Process,
   Reveal,
 } from "ui";
-import { WebsitesCards } from "ui";
 import { content } from "@/lib/ui/text/content";
 import { useLanguage } from "@/lib/ui/context/LanguageContext";
 
@@ -32,22 +32,16 @@ export default function Home() {
             <WhoItsFor />
           </Section>
 
+          <Section id="whyMe">
+            <ValueProp />
+          </Section>
+
           <Section id="projects">
             <Reveal className="font-heading flex mb-10 text-3xl font-bold text-base-4">
               {content[language].projects.sectionTitle}
             </Reveal>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
-              {WebsitesCards.map((card, index) => (
-                <Reveal key={card.id} delay={(index % 3) * 120}>
-                  <Card
-                    title={card.title}
-                    description={card.description}
-                    image={card.image}
-                    link={card.link}
-                    newWindow
-                  />
-                </Reveal>
-              ))}
+            <div className="w-full flex flex-col items-center">
+              <ProjectsGrid />
             </div>
           </Section>
 

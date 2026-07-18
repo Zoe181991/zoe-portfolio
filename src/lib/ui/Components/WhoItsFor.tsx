@@ -18,7 +18,7 @@ export function WhoItsFor() {
           <Reveal
             key={index}
             delay={index * 120}
-            className={`rounded-2xl bg-white border border-base-4 border-opacity-10 shadow-sm p-6 lg:p-8 ${
+            className={`rounded-2xl bg-white bg-opacity-90 border border-base-4 border-opacity-10 shadow-sm p-6 lg:p-8 ${
               isHebrew ? "text-right" : "text-left"
             }`}
           >

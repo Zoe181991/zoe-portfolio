@@ -33,9 +33,11 @@ export function Process() {
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="text-lg font-bold text-white">{step.title}</h3>
-              <p className="text-sm text-white text-opacity-80">
-                {step.description}
-              </p>
+              {step.description && (
+                <p className="text-sm text-white text-opacity-80">
+                  {step.description}
+                </p>
+              )}
             </div>
           </Reveal>
         ))}
