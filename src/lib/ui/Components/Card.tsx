@@ -26,12 +26,12 @@ export function Card({ title, description, image, link, newWindow }: CardProps) 
       <div className="flex h-full flex-col">
         <div className="flex flex-col h-1/2 w-full shrink-0 overflow-hidden">
           <div
-            className="flex items-center gap-1.5 px-3 py-2 bg-base-4 bg-opacity-90 shrink-0"
+            className="flex items-center gap-1.5 px-3 py-2 bg-white border-b border-base-4 border-opacity-10 shrink-0"
             style={{ direction: "ltr" }}
           >
-            <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
-            <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]" />
-            <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#580952]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#FD8928]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#EE81F1]" />
           </div>
           <div className="relative flex-1 w-full">
             <Image
@@ -45,7 +45,7 @@ export function Card({ title, description, image, link, newWindow }: CardProps) 
         </div>
 
         <div className="flex-1 min-h-0 flex flex-col items-center gap-2 p-5 pb-[10px] overflow-hidden text-center">
-          <h3 className="text-xl md:text-2xl font-extrabold text-base-4 leading-tight line-clamp-2">
+          <h3 className="text-base md:text-lg font-bold text-base-4 leading-tight line-clamp-2">
             {title[language]}
           </h3>
           {description && (
@@ -53,7 +53,7 @@ export function Card({ title, description, image, link, newWindow }: CardProps) 
               {description[language]}
             </p>
           )}
-          <span className="btn-gradient inline-flex w-fit items-center gap-1.5 text-base-1 text-xs md:text-sm font-semibold px-4 py-2 mt-auto">
+          <span className="inline-flex w-fit items-center gap-1.5 text-xs md:text-sm font-semibold px-4 py-1.5 mt-auto rounded-full border border-base-2 border-opacity-30 text-base-2">
             {content[language].projects.visitSite}
           </span>
         </div>

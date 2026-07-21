@@ -6,7 +6,8 @@ import {
   Section,
   AboutSection,
   WhoItsFor,
-  ValueProp,
+  ProblemAdvantages,
+  WhatYouGet,
   ProjectsGrid,
   Process,
   Reveal,
@@ -28,28 +29,30 @@ export default function Home() {
             badges={content[language].hero.badges}
           />
 
+          <Section id="whyMe">
+            <ProblemAdvantages />
+          </Section>
+
           <Section id="whoItsFor">
             <WhoItsFor />
           </Section>
 
-          <Section id="whyMe">
-            <ValueProp />
+          <Section id="whatYouGet">
+            <WhatYouGet />
           </Section>
 
           <Section id="projects">
-            <Reveal className="font-heading flex mb-10 text-3xl font-bold text-base-4">
-              {content[language].projects.sectionTitle}
+            <Reveal className="font-heading flex justify-start mb-10 text-3xl font-bold text-base-2 w-full">
+              <h2>{content[language].projects.sectionTitle}</h2>
             </Reveal>
             <div className="w-full flex flex-col items-center">
               <ProjectsGrid />
             </div>
           </Section>
 
-          <div className="w-full px-8">
-            <Section id="aboutMe">
-              <AboutSection />
-            </Section>
-          </div>
+          <Section id="aboutMe">
+            <AboutSection />
+          </Section>
 
           <Section id="process">
             <Process />

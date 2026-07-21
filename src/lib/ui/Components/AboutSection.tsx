@@ -26,16 +26,16 @@ export function AboutSection() {
   return (
     <div className="w-full flex flex-col items-center lg:items-start lg:flex-row h-full gap-4 lg:gap-12 ">
       <div className="flex w-full lg:w-2/3 flex-col h-full max-w-2xl">
-        <Reveal className="font-heading text-3xl mt-2 font-bold flex justify-center md:justify-start">
-          {heading}
+        <Reveal className="font-heading text-3xl mt-2 font-bold flex justify-start">
+          <h2>{heading}</h2>
         </Reveal>
         <Reveal
           delay={100}
-          className={`inline-flex flex-col text-sm md:text-lg  gap-4 mt-10 mb-8 bg-white bg-opacity-90 rounded-2xl p-6 lg:p-10 ${
+          className={`inline-flex flex-col text-base md:text-lg  gap-4 mt-10 mb-8 bg-white bg-opacity-90 rounded-2xl p-6 lg:p-10 ${
             isHebrew ? "text-right" : "text-left"
           }`}
         >
-          <ul className="opacity-100 text-md lg:text-lg text-base-4 space-y-3.5">
+          <ul className="opacity-100 text-md lg:text-lg text-base-4 leading-relaxed space-y-3.5">
             {bio.map((paragraph, index) => (
               <li key={index}>{paragraph}</li>
             ))}
@@ -49,9 +49,9 @@ export function AboutSection() {
           delay={200}
           className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-90 rounded-2xl p-6 lg:p-10"
         >
-          <div className="font-heading flex justify-center md:justify-start text-3xl font-bold mb-7 text-white">
+          <h3 className="font-heading flex justify-start text-3xl font-bold mb-7 text-white">
             {skillsHeading}
-          </div>
+          </h3>
           <div className="flex flex-wrap gap-3 w-full">
             {skills.map((skill, index) => (
               <span

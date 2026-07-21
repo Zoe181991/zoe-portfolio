@@ -79,35 +79,34 @@ export const content: Record<"he" | "en", SiteContent> = {
     hero: {
       name: "ZoeStudio",
       tagline: "להבין קוד. להבין אנשים.",
-      badges: ["עיצוב ב-Wix", "עיצוב ב-WordPress", "פיתוח Full-Stack"],
+      badges: ["פיתוח ב-Wix", "פיתוח ב-WordPress", "פיתוח Full-Stack", "עמודי נחיתה"],
     },
     whoItsFor: {
-      sectionTitle: "למי זה מיועד?",
+      sectionTitle: "עם מי אני עובדת?",
       audiences: [
         {
           title: "עצמאים ובעלי עסקים קטנים",
           description:
-            "צריכים עמוד נחיתה מדויק שעובד וממיר — בלי בלגן, בלי סיבוכים, עם מסר שמדבר אל הלקוחות שלכם.",
+            "צריכים עמוד נחיתה מדויק שעובד - בלי בלגן, בלי סיבוכים, עם מסר שמדבר אל הלקוחות שלכם.",
         },
         {
           title: "עמותות וארגונים חברתיים",
           description:
-            "רוצים להנגיש את התוכניות והשירותים שלכם למי שבאמת צריך אותם, בשפה ברורה ובנגישות מלאה.",
+            "רוצים להנגיש את התוכניות והשירותים שלכם למי שבאמת צריך אותם, בשפה ברורה שמדברת את המהות של החזון שלכם.",
         },
       ],
       cta: "לצפייה בפרויקטים",
     },
     problem: {
-      sectionTitle: "לפעמים צריך חכה",
+      sectionTitle: "האלמנט האנושי. להתחבר ל-ai בפשטות.",
       paragraphs: [
-        "(נו, המשל עם הדייג והדגים…)",
         "אז נכון שיש עכשיו כלים מאוד מתקדמים לבניית אתרים וכתיבת קוד, ואלו כלים מדהימים למי שיש לו גישה טכנית טובה למדי. אבל אחרי שהתוצאה הראשונה עולה - מתחילות לצוץ בעיות, צריך לשנות שורה פה ושם, לעדכן מידע או לינק או להבין לאן הלידים הולכים.",
         "לפעמים יותר פשוט לעשות את התהליך הזה יד ביד עם מישהי שמבינה בזה!",
         "לעשות עבודה יסודית ולחסוך אחר כך זמן יקר (ותסכול) בתיקון תקלות ובאגים.",
       ],
     },
     advantages: {
-      sectionTitle: "לא מעצבת אתרים טיפוסית",
+      sectionTitle: "לא מפתחת אתרים טיפוסית",
       paragraphs: [
         "אז יש בי גם וגם - צד טכנולוגי מפותח, יכולת טכנית, חוש אסתטי ויסודיות בלתי מתפשרת.",
         "וצד שמחובר לרגש ולרוח ובעיקר (!) לאנשים שמקדמים את הערכים והשליחות שלהם בעולם כעצמאיים או במסגרת ארגון.",
@@ -130,7 +129,7 @@ export const content: Record<"he" | "en", SiteContent> = {
     about: {
       heading: "נעים להכיר",
       bio: [
-        "תמיד בתנועה ותמיד לומדת. הסקרנות תמיד מובילה אותי למקומות טובים ואת האיכות הזו אני מביאה לכל מקום. כדי שהאתר ישקף את המהות שלכם כעצמאיים/עמותה - אני לומדת אתכם, שואלת ומכוונת. אחר כך אני מארגנת את התוכן לשפה שתוכל להגיע ללב של הקהל שלכם.",
+        "שמי זואי ברקן - אמא לילד וגרה בחוף הכרמל. תמיד לומדת, תמיד בתנועה. הסקרנות תמיד מובילה אותי למקומות טובים ואת האיכות הזו אני מביאה לכל מקום. כדי שהאתר ישקף את המהות שלכם כעצמאיים/עמותה - אני לומדת אתכם, שואלת ומכוונת. אחר כך אני מארגנת את התוכן לשפה שתוכל להגיע ללב של הקהל שלכם.",
         "וכמובן, לא משאירה אתכם לבד עם הבלגן. ניסיון כמפתחת full-stack ושנים של בניית אתרים ב-Wix כולל אוטומציות שמקלות על ניהול לידים. קוראת ומבינה קוד - מה שמאפשר לתפור גם פתרונות מתקדמים איפה שצריך (גם כותבת קוד, אבל כבר יש כלים אחרים שעושים את זה לא רע 😁). לאחרונה מעמיקה בקלוד קוד ובכלי AI נוספים כדי לייעל את כל מה שאפשר, ולחסוך לכם זמן שתתפנו לשליחות שלכם!",
         "בוגרת לימודי טיפול בתנועה (M.A), מנחת קבוצות, גינקוסופית (ליווי נשים הוליסטי) עם רקע נרחב כיזמית בפרויקטים חברתיים בתחומי חינוך, אמנות וקהילה. מביאה את הרגישות, ההבנה ברוח האישה והאדם, והיצירתיות שלי לתהליך העבודה שנעשה יחד.",
         "(לא תאמינו אבל כתבתי את הטקסט בעצמי ללא שימוש בצ'אטי)",
@@ -201,7 +200,7 @@ export const content: Record<"he" | "en", SiteContent> = {
       badges: ["Wix Design", "WordPress Design", "Full-Stack Development"],
     },
     whoItsFor: {
-      sectionTitle: "Who is this for?",
+      sectionTitle: "Who do I work with?",
       audiences: [
         {
           title: "Freelancers & small business owners",
@@ -249,7 +248,7 @@ export const content: Record<"he" | "en", SiteContent> = {
     about: {
       heading: "Nice to meet you",
       bio: [
-        "Always in motion, always learning. Curiosity always leads me to good places, and I bring that quality everywhere. So the site reflects who you really are — as a freelancer or a nonprofit — I get to know you, ask questions, and guide the process. Then I organize the content into language that reaches the heart of your audience.",
+        "I'm Zoe Barkan - a mom to one child, living on the Carmel coast. Always learning, always in motion. Curiosity always leads me to good places, and I bring that quality everywhere. So the site reflects who you really are — as a freelancer or a nonprofit — I get to know you, ask questions, and guide the process. Then I organize the content into language that reaches the heart of your audience.",
         "And of course, I don't leave you alone with the mess. Experience as a full-stack developer and years of building Wix websites, including automations that make lead management easier. I read and understand code — which lets me tailor advanced solutions wherever needed (I write code too, but there are already other tools that do that pretty well 😁). Lately I've been going deep into Claude Code and other AI tools, to streamline everything I can and save you time to focus on your mission!",
         "Graduate of movement therapy studies (M.A.), group facilitator, gynocosophist (holistic guidance for women), with an extensive background as a social entrepreneur in projects spanning education, art and community. I bring sensitivity, an understanding of the spirit of women and people, and my creativity to the work we do together.",
         "(You won't believe it, but I wrote this text myself — no AI chatbot involved.)",

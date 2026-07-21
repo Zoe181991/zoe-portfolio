@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export type SkillIconKey =
   | "wix"
@@ -40,62 +41,22 @@ const outlinePaths: Partial<Record<SkillIconKey, React.ReactNode>> = {
 function BrandIcon({ name }: { name: "wix" | "wordpress" | "canva" }) {
   if (name === "wix") {
     return (
-      <svg width="18" height="18" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="11" fill="#0C0B0B" />
-        <text
-          x="12"
-          y="16.5"
-          textAnchor="middle"
-          fontSize="11"
-          fontWeight="700"
-          fontFamily="sans-serif"
-          fill="#FFFFFF"
-        >
-          w
-        </text>
-      </svg>
+      <Image
+        unoptimized
+        src="/icons/wix.png"
+        alt=""
+        width={18}
+        height={18}
+        style={{ width: "auto", height: "12px" }}
+      />
     );
   }
   if (name === "wordpress") {
     return (
-      <svg width="18" height="18" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="11" fill="#00749C" />
-        <text
-          x="12"
-          y="16.5"
-          textAnchor="middle"
-          fontSize="12"
-          fontWeight="700"
-          fontFamily="sans-serif"
-          fill="#FFFFFF"
-        >
-          W
-        </text>
-      </svg>
+      <Image unoptimized src="/icons/wordpress.png" alt="" width={18} height={18} />
     );
   }
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24">
-      <defs>
-        <linearGradient id="canva-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#00C4CC" />
-          <stop offset="100%" stopColor="#7D2AE8" />
-        </linearGradient>
-      </defs>
-      <circle cx="12" cy="12" r="11" fill="url(#canva-grad)" />
-      <text
-        x="12"
-        y="16.5"
-        textAnchor="middle"
-        fontSize="12"
-        fontWeight="700"
-        fontFamily="sans-serif"
-        fill="#FFFFFF"
-      >
-        C
-      </text>
-    </svg>
-  );
+  return <Image unoptimized src="/icons/canva.png" alt="" width={18} height={18} />;
 }
 
 export function SkillIcon({ name }: { name: SkillIconKey }) {

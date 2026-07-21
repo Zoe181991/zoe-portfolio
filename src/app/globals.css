@@ -24,6 +24,13 @@ body {
   font-family: var(--font-open-sans), sans-serif;
 }
 
+@media (max-width: 767px) {
+  body {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -90,14 +97,18 @@ html[dir="ltr"] .font-heading {
   font-family: "Bespoke Stencil", var(--font-open-sans), sans-serif;
 }
 
+.font-logo {
+  font-family: "Bespoke Stencil", var(--font-open-sans), sans-serif;
+}
+
 .btn-gradient {
-  background: linear-gradient(135deg, #ee81f1, #fd8928);
+  background: linear-gradient(135deg, #9d1096, #eb6806);
   border-radius: 10px;
   transition: background 0.2s ease-in-out;
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(135deg, #9d1096, #eb6806);
+  background: linear-gradient(135deg, #ee81f1, #fd8928);
 }
 
 .btn-lift {

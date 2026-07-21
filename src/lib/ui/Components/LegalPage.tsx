@@ -26,7 +26,7 @@ export function LegalPage({ content }: LegalPageProps) {
                 isHebrew ? "text-right" : "text-left"
               }`}
             >
-              <h1 className="text-3xl font-bold text-base-4 mb-2">{title}</h1>
+              <h1 className="text-3xl font-bold text-base-2 mb-2">{title}</h1>
               {paragraphs.map((paragraph, index) => (
                 <p key={index} className="text-base-4 text-opacity-80">
                   {paragraph}
