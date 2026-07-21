@@ -18,7 +18,7 @@ export function Header({ h1, h2, badges }: headerProps) {
 
   return (
     <div className="flex flex-col w-full justify-center items-center pt-16 pb-8 px-4 md:px-12 lg:px-24">
-      <Reveal className="flex flex-col md:flex-row items-center gap-10 md:gap-12 w-full max-w-4xl">
+      <Reveal className="flex flex-col md:flex-row items-center gap-10 md:gap-12 w-full max-w-5xl">
         <div className="flex flex-col gap-5 items-center md:items-start text-center md:text-start">
           <h1 className="font-logo text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-base-2 to-base-4">
             {h1}
@@ -36,7 +36,7 @@ export function Header({ h1, h2, badges }: headerProps) {
               {badges.map((badge, index) => (
                 <span
                   key={index}
-                  className="text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-base-2 border-opacity-30 text-base-2"
+                  className="text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full border border-base-2 border-opacity-30 text-base-2 bg-white bg-opacity-15"
                 >
                   {badge}
                 </span>

@@ -29,7 +29,7 @@ export function Process() {
                 isHebrew ? "text-right" : "text-left"
               }`}
             >
-              <span className="text-sm font-bold text-base-3">
+              <span className="text-[calc(21px+1em)] font-normal text-base-3">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="text-lg font-bold text-white">{step.title}</h3>

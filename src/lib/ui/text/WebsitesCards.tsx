@@ -14,7 +14,7 @@ export const WebsitesCards: WebsiteCardProps[] = [
       en: "The School of Songs",
     },
     description: {
-      he: "אתר",
+      he: "אתר הרשמה לתכנית לימודי מוזיקה",
       en: "Website",
     },
     image: `/images/projects/websites/songs-school.jpg`,
@@ -27,7 +27,7 @@ export const WebsitesCards: WebsiteCardProps[] = [
       en: "Nimrod Keinan",
     },
     description: {
-      he: "אתר",
+      he: "אתר לאמן ומוזיקאי - סדנאות, תכניות וריטריטים",
       en: "Website",
     },
     image: `/images/projects/websites/nimrod-keinan.jpg`,
@@ -40,7 +40,7 @@ export const WebsitesCards: WebsiteCardProps[] = [
       en: "Yuval Tamarkin",
     },
     description: {
-      he: "אתר",
+      he: "אתר לעצמאית - מלווה נשים בשערי הנשיות ומעסת רחם",
       en: "Website",
     },
     image: `/images/projects/websites/yuval-tamarkin.jpg`,
@@ -53,7 +53,7 @@ export const WebsitesCards: WebsiteCardProps[] = [
       en: "Yarden Levin - A Nest for Parting",
     },
     description: {
-      he: "עמוד נחיתה",
+      he: "עמוד נחיתה לעו״ד ומגשרת",
       en: "Landing page",
     },
     image: `/images/projects/websites/yarden-levin.jpg`,
@@ -66,7 +66,7 @@ export const WebsitesCards: WebsiteCardProps[] = [
       en: "Bridges to Recovery",
     },
     description: {
-      he: "עמוד נחיתה",
+      he: "עמוד נחיתה לכנס מקצועי למטפלים בטראומה",
       en: "Landing page",
     },
     image: `/images/projects/websites/bridges-recovery.jpg`,
@@ -79,7 +79,7 @@ export const WebsitesCards: WebsiteCardProps[] = [
       en: "Support Group for Parents of Active-Duty Soldiers",
     },
     description: {
-      he: "עמוד נחיתה",
+      he: "עמוד נחיתה לקבוצת מיינדפולנס",
       en: "Landing page",
     },
     image: `/images/projects/websites/parents-support-group.jpg`,
@@ -92,11 +92,24 @@ export const WebsitesCards: WebsiteCardProps[] = [
       en: "Moral Injury Retreat",
     },
     description: {
-      he: "עמוד נחיתה",
+      he: "עמוד נחיתה לריטריט",
       en: "Landing page",
     },
     image: `/images/projects/websites/moral-injury.jpg`,
     link: "https://www.kfarsarah.com/moral",
+  },
+  {
+    id: 13,
+    title: {
+      he: "גיא רודוביץ",
+      en: "Guy Rodovich",
+    },
+    description: {
+      he: "אתר למוזיקאי",
+      en: "Website",
+    },
+    image: `/images/projects/websites/guy-rodovich.jpg`,
+    link: "https://guyrodovich.wixsite.com/guy-rodovich",
   },
   {
     id: 3,
@@ -105,11 +118,24 @@ export const WebsitesCards: WebsiteCardProps[] = [
       en: "Shai Nir",
     },
     description: {
-      he: "עמוד נחיתה",
+      he: "עמוד נחיתה לעסק עצמאי - טיפול בשיטת גרינברג",
       en: "Landing page",
     },
     image: `/images/projects/websites/shai_nir.png`,
     link: `https://www.shainir.com/`,
+  },
+  {
+    id: 12,
+    title: {
+      he: "סטודיו נחמה",
+      en: "Studio Nechama",
+    },
+    description: {
+      he: "עמוד נחיתה - סטודיו לאיינגר יוגה",
+      en: "Landing page",
+    },
+    image: `/images/projects/websites/studio-nechama.jpg`,
+    link: "https://www.danaelmalach.com/studio",
   },
   {
     id: 1,
@@ -137,45 +163,7 @@ export const WebsitesCards: WebsiteCardProps[] = [
     image: `/images/projects/websites/website_showcase_gynocosophia.gif`,
     link: `https://www.ohela.org/%D7%9C%D7%99%D7%9E%D7%95%D7%93%D7%99-%D7%92%D7%99%D7%A0%D7%A7%D7%95%D7%A1%D7%95%D7%A4%D7%99%D7%94`,
   },
-  {
-    id: 4,
-    title: {
-      he: "אוהלה - אדמת מרפא נשית",
-      en: "Ohela - A Healing Land for Women",
-    },
-    description: {
-      he: "אתר לעמותה",
-      en: "Website for a nonprofit organization",
-    },
-    image: `/images/projects/websites/amen.png`,
-    link: "https://www.ohela.org",
-  },
-  {
-    id: 12,
-    title: {
-      he: "סטודיו נחמה",
-      en: "Studio Nechama",
-    },
-    description: {
-      he: "עמוד נחיתה",
-      en: "Landing page",
-    },
-    image: `/images/projects/websites/studio-nechama.jpg`,
-    link: "https://www.danaelmalach.com/studio",
-  },
-  {
-    id: 13,
-    title: {
-      he: "גיא רודוביץ",
-      en: "Guy Rodovich",
-    },
-    description: {
-      he: "אתר",
-      en: "Website",
-    },
-    image: `/images/projects/websites/guy-rodovich.jpg`,
-    link: "https://guyrodovich.wixsite.com/guy-rodovich",
-  },
+
   {
     id: 14,
     title: {

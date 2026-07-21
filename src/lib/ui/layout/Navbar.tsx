@@ -46,7 +46,18 @@ export function Navbar() {
             : "hidden"
         }
       >
-        <MobileNav />
+        <div className="flex justify-end px-4 pt-3">
+          <button
+            aria-label="close menu"
+            onClick={() => setMobileNav(false)}
+            className="flex items-center justify-center w-8 h-8 rounded-full text-base-4 hover:bg-[#EE81F1] hover:text-base-1 transition ease-in-out duration-150"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+        <MobileNav onClose={() => setMobileNav(false)} />
       </div>
     </nav>
   );

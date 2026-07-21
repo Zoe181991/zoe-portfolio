@@ -10,10 +10,10 @@ export function WhoItsFor() {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <Reveal className="font-heading flex justify-start mb-8 text-3xl font-bold text-base-2 w-full max-w-4xl">
+      <Reveal className="font-heading flex justify-start mb-8 text-3xl font-bold text-base-2 w-full max-w-5xl">
         <h2>{sectionTitle}</h2>
       </Reveal>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl">
         {audiences.map((audience, index) => (
           <Reveal
             key={index}
