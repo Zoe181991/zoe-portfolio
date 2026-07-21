@@ -10,8 +10,8 @@ export function Process() {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <Reveal className="font-heading flex mb-3 text-3xl font-bold text-base-4">
-        {sectionTitle}
+      <Reveal className="font-heading flex justify-start mb-3 text-3xl font-bold text-base-2 w-full max-w-5xl">
+        <h2>{sectionTitle}</h2>
       </Reveal>
       <Reveal delay={80} className="max-w-2xl mb-8 text-center">
         <p className="text-base-4 text-opacity-80">{intro}</p>

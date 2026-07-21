@@ -13,6 +13,7 @@ export { WebsitesCards } from "./text/WebsitesCards";
 export { content } from "./text/content";
 export { AboutSection } from "./Components/AboutSection";
 export { WhoItsFor } from "./Components/WhoItsFor";
-export { ValueProp } from "./Components/ValueProp";
+export { ProblemAdvantages } from "./Components/ProblemAdvantages";
+export { WhatYouGet } from "./Components/WhatYouGet";
 export { Process } from "./Components/Process";
 export { LanguageProvider, useLanguage } from "./context/LanguageContext";
