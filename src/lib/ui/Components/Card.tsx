@@ -24,7 +24,7 @@ export function Card({ title, description, image, link, newWindow }: CardProps) 
       className="group block w-full aspect-square rounded-2xl bg-white bg-opacity-90 border border-base-4 border-opacity-10 shadow-sm hover:shadow-lg hover:scale-90 transition-all duration-300 overflow-hidden"
     >
       <div className="flex h-full flex-col">
-        <div className="flex flex-col h-1/2 w-full shrink-0 overflow-hidden">
+        <div className="flex flex-col h-[65%] w-full shrink-0 overflow-hidden">
           <div
             className="flex items-center gap-1.5 px-3 py-2 bg-white border-b border-base-4 border-opacity-10 shrink-0"
             style={{ direction: "ltr" }}

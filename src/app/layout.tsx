@@ -27,6 +27,7 @@ export default function RootLayout({
       </head>
       <body className={openSans.variable}>
         <LanguageProvider>{children}</LanguageProvider>
+        <script src="https://cdn.enable.co.il/licenses/enable-L25299s2thfdv7lq-0324-83229/init.js"></script>
       </body>
     </html>
   );

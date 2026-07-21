@@ -24,7 +24,7 @@ export function AboutSection() {
   const isHebrew = language === "he";
 
   return (
-    <div className="w-full flex flex-col items-center lg:items-start lg:flex-row h-full gap-4 lg:gap-12 ">
+    <div className="w-full flex flex-col items-center lg:items-start lg:flex-row h-full gap-4 lg:gap-12">
       <div className="flex w-full lg:w-2/3 flex-col h-full max-w-2xl">
         <Reveal className="font-heading text-3xl mt-2 font-bold flex justify-start">
           <h2>{heading}</h2>
@@ -47,9 +47,9 @@ export function AboutSection() {
         </Reveal>
         <Reveal
           delay={200}
-          className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-90 rounded-2xl p-6 lg:p-10"
+          className="gap-4 mt-2 mb-8 bg-base-5 bg-opacity-30 rounded-2xl p-6 lg:p-10"
         >
-          <h3 className="font-heading flex justify-start text-3xl font-bold mb-7 text-white">
+          <h3 className="font-heading flex justify-start text-3xl font-bold mb-7 text-base-2">
             {skillsHeading}
           </h3>
           <div className="flex flex-wrap gap-3 w-full">

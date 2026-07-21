@@ -11,7 +11,7 @@ export function ProblemAdvantages() {
 
   return (
     <div className="w-full flex flex-col items-center gap-16">
-      <div className={`w-full max-w-2xl flex flex-col gap-4 ${alignClass}`}>
+      <div className={`w-full max-w-5xl flex flex-col gap-4 ${alignClass}`}>
         <Reveal className="font-heading text-3xl font-bold text-base-2">
           <h2>{problem.sectionTitle}</h2>
         </Reveal>
@@ -26,7 +26,7 @@ export function ProblemAdvantages() {
         ))}
       </div>
 
-      <div className={`w-full max-w-2xl flex flex-col gap-4 ${alignClass}`}>
+      <div className={`w-full max-w-5xl flex flex-col gap-4 ${alignClass}`}>
         <Reveal className="font-heading text-3xl font-bold text-base-2">
           <h2>{advantages.sectionTitle}</h2>
         </Reveal>

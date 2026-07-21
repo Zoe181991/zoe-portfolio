@@ -10,7 +10,7 @@ export function WhatYouGet() {
   const alignClass = isHebrew ? "text-right" : "text-left";
 
   return (
-    <div className={`w-full max-w-2xl flex flex-col gap-4 mx-auto ${alignClass}`}>
+    <div className={`w-full max-w-5xl flex flex-col gap-4 mx-auto ${alignClass}`}>
       <Reveal className="font-heading text-3xl font-bold text-base-2">
         <h2>{whatYouGet.sectionTitle}</h2>
       </Reveal>
